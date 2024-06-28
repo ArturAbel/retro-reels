@@ -1,4 +1,5 @@
 .hero-spinner {
+  filter: drop-shadow(var(--drops-shadow));
   position: absolute;
   transition: 0.5s;
   cursor: pointer;
@@ -12,8 +13,8 @@
 }
 
 .spinner-0 {
-  left: 15%;
-  top: 30%;
+  left: 10%;
+  top: 26%;
 }
 
 .spinner-1 {
@@ -23,6 +24,28 @@
 }
 
 .spinner-2 {
-  left: 33%;
+  left: 35%;
   top: 60%;
+}
+
+.spinner-3 {
+  transition: 0.5s ease-in-out;
+  filter:none;
+  left: -3vw;
+  bottom:50vh;
+}
+
+.spinner-3:hover {
+  transform: rotate(54deg);
+}
+
+.spinner-4 {
+  transform: rotate(-25deg);
+  transition: 0.5s ease-in-out;
+  bottom: 10%;
+  left: 5%;
+}
+
+.spinner-4:hover {
+  transform: rotate(-25deg);
 }

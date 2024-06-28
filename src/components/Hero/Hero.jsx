@@ -3,7 +3,6 @@ import { SpinnerItem } from "../SpinnerItem/SpinnerItem";
 import {
   heroImages1,
   heroImages2,
-  arrowHero,
   heroSpinners,
   heroImage,
 } from "../../utilities/variables";
@@ -19,7 +18,6 @@ export const Hero = ({ homeGalleryRef }) => {
             <button className="button hero-menu-button ">menu</button>
           </div>
           <h4 className="hero-title">retro reels</h4>
-          <img className="hero-arrow" src={arrowHero}></img>
         </div>
         {heroSpinners.map((image, index) => {
           return <SpinnerItem key={index} image={image} index={index} />;

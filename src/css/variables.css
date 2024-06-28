@@ -9,18 +9,22 @@
   --background-secondary-4: rgb(248, 165, 210);
   --background-secondary-5: rgb(230, 101, 129);
   --background-secondary-6: rgba(163, 221, 201, 255);
-  --background-secondary-7: rgb(147, 190, 59);
-  --background-secondary-8: rgba(254, 186, 175, 255);
+  --background-secondary-7: rgba(254, 186, 175, 255);
+  --background-secondary-8: rgb(239, 75, 37);
 
   --background-light-1: rgba(250, 251, 241, 255);
   --background-light-2: rgba(247, 240, 231, 255);
-
   --background-dark: rgb(38, 38, 38);
 
   /* Text Color */
   --color-content1: rgb(0, 0, 0);
   --color-content2: rgb(38, 38, 38);
 
+  /* FIlters */
+  --drops-shadow: -8px 5px 21px #000000;
+  --drops-shadow-books: 0px 15px 10px #000000;
+
+  /* Fonts */
   --font-retro1: "Psycho", sans-serif;
   --font-retro2: "PeaceBegins", sans-serif;
   --font-retro3: "Wizard", sans-serif;
