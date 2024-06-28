@@ -1,0 +1,74 @@
+:root {
+  --background-main-1: rgb(255, 254, 211);
+  --background-main-2: rgb(235, 223, 175);
+  --background-main-3: rgb(240, 239, 107);
+
+  --background-secondary-1: rgba(196, 170, 215, 255);
+  --background-secondary-2: rgb(177, 175, 255);
+  --background-secondary-3: rgb(127, 163, 212);
+  --background-secondary-4: rgb(248, 165, 210);
+  --background-secondary-5: rgb(230, 101, 129);
+  --background-secondary-6: rgba(163, 221, 201, 255);
+  --background-secondary-7: rgb(147, 190, 59);
+  --background-secondary-8: rgba(254, 186, 175, 255);
+
+  --background-light-1: rgba(250, 251, 241, 255);
+  --background-light-2: rgba(247, 240, 231, 255);
+
+  --background-dark: rgb(38, 38, 38);
+
+  /* Text Color */
+  --color-content1: rgb(0, 0, 0);
+  --color-content2: rgb(38, 38, 38);
+
+  --font-retro1: "Psycho", sans-serif;
+  --font-retro2: "PeaceBegins", sans-serif;
+  --font-retro3: "Wizard", sans-serif;
+
+  --font-music1: "mexcellent3d", sans-serif;
+  --font-music2: "mexcellent", sans-serif;
+
+  --font-movies1: "CourierPrime-Regular", sans-serif;
+
+  --font-content: "FragmentMono-Regular", sans-serif;
+  --font-content-subTitle: "BN-Axel-Grotesk", sans-serif;
+}
+
+/* Retro Fonts */
+@font-face {
+  font-family: "Psycho";
+  src: url("../assets/fonts/retro/Psychofun.ttf") format("truetype");
+}
+@font-face {
+  font-family: "PeaceBegins";
+  src: url("../assets/fonts/retro/PeaceBegins.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Wizard";
+  src: url("../assets/fonts/retro/Wizard.otf") format("truetype");
+}
+
+/* Music Fonts */
+@font-face {
+  font-family: "mexcellent3d";
+  src: url("../assets/fonts/music/mexcellent3d.otf") format("opentype");
+}
+@font-face {
+  font-family: "mexcellent";
+  src: url("../assets/fonts/music/mexcellent.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "BN-Axel-Grotesk";
+  src: url("../assets/fonts/main/Grotesk.ttf") format("opentype");
+}
+
+@font-face {
+  font-family: "FragmentMono-Regular";
+  src: url("../assets/fonts/main/FragmentMono-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "CourierPrime-Regular";
+  src: url("../assets/fonts/movie/CourierPrime-Regular.ttf") format("truetype");
+}

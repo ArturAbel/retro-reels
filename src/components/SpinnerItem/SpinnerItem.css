@@ -1,0 +1,28 @@
+.hero-spinner {
+  position: absolute;
+  transition: 0.5s;
+  cursor: pointer;
+  height: 25rem;
+  width: 25rem;
+  z-index: 2;
+}
+
+.hero-spinner:hover {
+  transform: scale(1.1);
+}
+
+.spinner-0 {
+  left: 15%;
+  top: 30%;
+}
+
+.spinner-1 {
+  z-index: 0;
+  left: 40%;
+  top: 15%;
+}
+
+.spinner-2 {
+  left: 33%;
+  top: 60%;
+}
