@@ -30,10 +30,13 @@ export const heroSpinners = [
   "../../assets/img/hero/spinner3.png",
 ];
 
-export const arrowHero = "../../assets/img/hero/arrow.png";
 export const heroImage = "../../assets/img/hero/hero5.png";
 
 // Music Component
 export const bigRecordImage = "../../assets/img/main/record.png";
 export const bigCoverImage = "../../assets/img/main/cover.jpg";
 export const arrowRecords = "../../assets/img/hero/arrow1.png";
+
+// Tv Component
+export const tvSpinner1 = "../../assets/img/main/spinner3.png";
+export const tvSpinner2 = "../../assets/img/main/spinner4.png";

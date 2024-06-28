@@ -14,20 +14,10 @@ export const Home = () => {
   const homeGalleryRef = useRef(null);
   const homeSectionRef = useRef(null);
   const musicSectionRef = useRef(null);
+  const tvSectionRef = useRef(null);
 
   useGSAP(() => {
     const container = homeSectionRef.current;
-
-    gsap.to(".spinner-0", {
-      rotation: 360,
-      ease: "none",
-      scrollTrigger: {
-        trigger: container,
-        scrub: 2,
-        start: "top top",
-        end: "+=3000",
-      },
-    });
 
     gsap
       .timeline({
@@ -54,7 +44,7 @@ export const Home = () => {
         trigger: homeGalleryRef.current,
         start: "top top",
         end: "+=3000",
-        scrub: true,
+        scrub: 2,
       },
     });
     gsap.to(".col-2", {
@@ -64,18 +54,38 @@ export const Home = () => {
         trigger: homeGalleryRef.current,
         start: "top top",
         end: "+=3000",
-        scrub: true,
+        scrub: 2,
       },
     }),
       gsap.to(".music-component-record-image", {
         y: -750,
-        rotation: 400,
+        rotation: 500,
         ease: "none",
         scrollTrigger: {
           trigger: musicSectionRef.current,
           start: "top bottom",
+          end: "+=2200",
+          scrub: 1,
+        },
+      }),
+      gsap.to(".tv-books-image2", {
+        y: 0,
+        ease: "none",
+        scrollTrigger: {
+          trigger: tvSectionRef.current,
+          start: "top top",
           end: "+=2000",
-          scrub: true,
+          scrub: 1,
+        },
+      }),
+      gsap.to(".tv-books-image1", {
+        y: 0,
+        ease: "none",
+        scrollTrigger: {
+          trigger: tvSectionRef.current,
+          start: "top top",
+          end: "+=1000",
+          scrub: 1,
         },
       }),
       { scope: container };
@@ -85,7 +95,7 @@ export const Home = () => {
     <section ref={homeSectionRef} className="section-home">
       <Hero />
       <MusicComponent musicSectionRef={musicSectionRef} />
-      <TvComponent />
+      <TvComponent tvSectionRef={tvSectionRef} />
     </section>
   );
 };

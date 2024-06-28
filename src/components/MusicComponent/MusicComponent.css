@@ -1,5 +1,4 @@
 .section-music-component {
-  background-color: var(--background-main-2);
   overflow: hidden;
   flex-shrink: 0;
   display: flex;
@@ -20,19 +19,19 @@
   height: 60rem;
   width: 60rem;
   top: 1150px;
-  left: 50%;
+  left: 70%;
 }
 
 .music-component-cover-image {
   box-shadow: rgba(0, 0, 0, 0.25) -5px -5px 28px,
-    rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    rgba(0, 0, 0, 0.22) 0px -7px 10px;
   transform: translate(-50%, -30%);
   object-position: top;
   position: relative;
   object-fit: cover;
   height: 40rem;
   width: 70rem;
-  left: 50%;
+  left: 70%;
   top: 90%;
 }
 
@@ -42,7 +41,7 @@
 }
 
 .music-component-container {
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
   position: relative;
   display: flex;
@@ -52,18 +51,18 @@
 
 .music-component-title {
   text-shadow: 3px 3px 0 var(--color-content1);
-  color: var(--background-secondary-2);
+  color: var(--background-secondary-8);
+  font-family: var(--font-movies1);
   text-transform: uppercase;
-  font-size: 5rem;
+  font-size: 4rem;
+  padding-bottom: 30rem;
 }
 
 .music-component-arrow {
+  transform: scaleX(-1) rotate(40deg);
   position: absolute;
   width: 15rem;
+  bottom: 60vh;
+  right: 20vw;
   z-index: 2;
-  right: 28vw;
-  bottom: 46vh;
-  transform: scaleX(-1);
-
-  
 }

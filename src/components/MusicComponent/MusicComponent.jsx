@@ -24,7 +24,7 @@ export const MusicComponent = ({ musicSectionRef }) => {
         </div>
       </div>
       <div className="music-component-container">
-        <h4 className="music-component-title">records</h4>
+        <h4 className="music-component-title">Classic Spins</h4>
         <img className="music-component-arrow" src={arrowRecords}></img>
       </div>
     </section>
