@@ -1,8 +1,7 @@
 :root {
   --background-main-1: rgb(255, 254, 211);
   --background-main-2: rgb(235, 223, 175);
-  --background-main-3: rgb(240, 239, 107);
-
+  --background-main-3: rgb(255, 255, 59);
   --background-secondary-1: rgba(196, 170, 215, 255);
   --background-secondary-2: rgb(177, 175, 255);
   --background-secondary-3: rgb(127, 163, 212);
@@ -10,32 +9,29 @@
   --background-secondary-5: rgb(230, 101, 129);
   --background-secondary-6: rgba(163, 221, 201, 255);
   --background-secondary-7: rgba(254, 186, 175, 255);
-  --background-secondary-8: rgb(239, 75, 37);
-
+  --background-secondary-8: #f9cdce;
+  --background-secondary-9: rgb(239, 75, 37);
   --background-light-1: rgba(250, 251, 241, 255);
   --background-light-2: rgba(247, 240, 231, 255);
-  --background-dark: rgb(38, 38, 38);
-
+  --background-dark: rgb(39, 39, 37);
+  /* --background-main-3: rgb(240, 239, 107); */
   /* Text Color */
   --color-content1: rgb(0, 0, 0);
-  --color-content2: rgb(38, 38, 38);
+  --color-content2: rgb(39, 39, 37);
 
   /* FIlters */
-  --drops-shadow: -8px 5px 21px #000000;
+  --drops-shadow: 3px -3px 10px #4c4c4c;
   --drops-shadow-books: 0px 15px 10px #000000;
 
   /* Fonts */
-  --font-retro1: "Psycho", sans-serif;
+  --font-content-subTitle: "BN-Axel-Grotesk", sans-serif;
+  --font-movies1: "CourierPrime-Regular", sans-serif;
+  --font-content: "FragmentMono-Regular", sans-serif;
   --font-retro2: "PeaceBegins", sans-serif;
-  --font-retro3: "Wizard", sans-serif;
-
   --font-music1: "mexcellent3d", sans-serif;
   --font-music2: "mexcellent", sans-serif;
-
-  --font-movies1: "CourierPrime-Regular", sans-serif;
-
-  --font-content: "FragmentMono-Regular", sans-serif;
-  --font-content-subTitle: "BN-Axel-Grotesk", sans-serif;
+  --font-retro1: "Psycho", sans-serif;
+  --font-retro3: "Wizard", sans-serif;
 }
 
 /* Retro Fonts */
@@ -64,7 +60,7 @@
 
 @font-face {
   font-family: "BN-Axel-Grotesk";
-  src: url("../assets/fonts/main/Grotesk.ttf") format("opentype");
+  src: url("../assets/fonts/main/Grotesk.ttf") format("truetype");
 }
 
 @font-face {

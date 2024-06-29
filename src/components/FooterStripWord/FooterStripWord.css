@@ -1,0 +1,15 @@
+.separator-container {
+   text-transform: uppercase;
+   letter-spacing: -1px;
+   white-space: nowrap;
+   align-items: center;
+   font-size: 4rem;
+   display: flex;
+   gap: 1rem;
+
+ }
+ 
+ .separator-word {
+   padding-top: 0.5rem;
+   
+ }

@@ -1,6 +1,6 @@
 .hero-gallery-img {
   object-fit: cover;
-  min-height: 25rem;
-  height: auto;
-  width: 18rem;
+  height: 18rem;
+  width: 28rem;
+  padding: 0.2rem 0;
 }

@@ -13,26 +13,24 @@
 }
 
 .spinner-0 {
-  left: 10%;
-  top: 26%;
+  left: 15%;
+  top: 10%;
 }
 
 .spinner-1 {
-  z-index: 0;
-  left: 40%;
-  top: 15%;
+  bottom: -5vh;
+  left: 25%;
 }
 
 .spinner-2 {
-  left: 35%;
-  top: 60%;
+  right: 20%;
+  bottom: 5%;
 }
 
 .spinner-3 {
   transition: 0.5s ease-in-out;
-  filter:none;
-  left: -3vw;
-  bottom:50vh;
+  bottom: 0;
+  left: 5vw;
 }
 
 .spinner-3:hover {
@@ -40,12 +38,9 @@
 }
 
 .spinner-4 {
-  transform: rotate(-25deg);
   transition: 0.5s ease-in-out;
-  bottom: 10%;
-  left: 5%;
+  filter: none;
+  left: -5vw;
+  top: -2vh;
 }
 
-.spinner-4:hover {
-  transform: rotate(-25deg);
-}

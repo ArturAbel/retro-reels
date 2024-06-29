@@ -10,18 +10,17 @@
 }
 
 html {
+  scroll-behavior: smooth;
+  scrollbar-width: none;
   font-size: 62.5%;
 }
 
-@media only screen and (max-width: 800px) {
-  html {
-    font-size: 50%;
-  }
-}
-
 body {
-  background-color: var(--background-main-2);
+  background-color: var(--background-secondary-8);
   box-sizing: border-box;
+  scrollbar-width: 0;
+  overflow-x: hidden;
+
   font-weight: 400;
   line-height: 1.6;
 }
