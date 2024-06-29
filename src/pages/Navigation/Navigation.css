@@ -1,0 +1,102 @@
+.section-navigation {
+  background-color: var(--background-dark);
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  display: flex;
+  height: 100vh;
+  width: 100%;
+}
+
+.navigation-top {
+  color: var(--background-secondary-8);
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 3rem;
+  outline: none;
+  display: flex;
+  height: 25vh;
+  width: 100%;
+}
+
+.navigation-top-link {
+  font-family: var(--font-movies1);
+  color: var(--background-secondary-8);
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 3rem;
+}
+
+.navigation-links {
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
+  line-height: 1.1;
+  outline: none;
+  display: flex;
+  height: 75vh;
+  width: 80vw;
+}
+
+.navigation-header {
+  font-family: var(--font-retro1);
+  text-transform: capitalize;
+  font-size: 5rem;
+}
+
+.navigation-main-link {
+  font-family: var(--font-retro2);
+  text-transform: uppercase;
+  font-size: 12rem;
+  font-weight: 900;
+  color: inherit;
+}
+
+.link-records {
+  color: var(--background-secondary-8);
+  font-family: var(--font-music1);
+}
+
+.link-books {
+  color: var(--background-secondary-8);
+  font-family: var(--font-book);
+  text-transform: capitalize;
+}
+
+.link-movies {
+  color: var(--background-secondary-8);
+  font-family: var(--font-movies1);
+  font-size: 13rem;
+}
+
+.movies-hover-icon,
+.books-hover-icon,
+.records-hover-icon {
+  vertical-align: middle;
+  font-size: 5rem;
+  margin: 0 1rem;
+}
+
+.movies-hover-icon,
+.books-hover-icon,
+.records-hover-icon {
+  opacity: 0;
+}
+
+.navigation-main-link:hover {
+  color: var(--background-light-1);
+  transition: 0.5s;
+}
+
+.link-records:hover .records-hover-icon {
+  opacity: 1;
+}
+
+.link-books:hover .books-hover-icon {
+  opacity: 1;
+}
+
+.link-movies:hover .movies-hover-icon {
+  opacity: 1;
+}

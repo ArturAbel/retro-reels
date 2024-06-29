@@ -22,11 +22,13 @@
   /* FIlters */
   --drops-shadow: 3px -3px 10px #4c4c4c;
   --drops-shadow-books: 0px 15px 10px #000000;
+  --drops-shadow-light: 0px 15px 10px #ffffff;
 
   /* Fonts */
   --font-content-subTitle: "BN-Axel-Grotesk", sans-serif;
   --font-movies1: "CourierPrime-Regular", sans-serif;
   --font-content: "FragmentMono-Regular", sans-serif;
+  --font-book: "Domine", sans-serif;
   --font-retro2: "PeaceBegins", sans-serif;
   --font-music1: "mexcellent3d", sans-serif;
   --font-music2: "mexcellent", sans-serif;
@@ -58,16 +60,21 @@
   src: url("../assets/fonts/music/mexcellent.otf") format("opentype");
 }
 
+/* Content Fonts */
+@font-face {
+  font-family: "FragmentMono-Regular";
+  src: url("../assets/fonts/main/FragmentMono-Regular.ttf") format("truetype");
+}
 @font-face {
   font-family: "BN-Axel-Grotesk";
   src: url("../assets/fonts/main/Grotesk.ttf") format("truetype");
 }
 
-@font-face {
-  font-family: "FragmentMono-Regular";
-  src: url("../assets/fonts/main/FragmentMono-Regular.ttf") format("truetype");
-}
+/* Book Fonts */
 
+@import url("https://fonts.googleapis.com/css2?family=Domine:wght@400..700&display=swap");
+
+/* Movies Fonts */
 @font-face {
   font-family: "CourierPrime-Regular";
   src: url("../assets/fonts/movie/CourierPrime-Regular.ttf") format("truetype");
