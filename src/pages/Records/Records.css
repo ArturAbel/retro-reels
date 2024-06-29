@@ -1,49 +1,98 @@
 .section-records {
+  background-color: var(--background-light-3);
   justify-content: center;
-  align-items: center;
-  display: flex;
-  height: 100vh;
-  width: 100%;
-}
-
-.records-container {
-  transform-origin: center;
-  margin: 0 auto 2rem auto;
-  justify-content: center;
-  padding: 1rem 0.5rem;
-  display: flex;
-  height: 90vh;
-  width: 100%;
-}
-
-.records {
-  justify-content: center;
-  overflow: hidden;
-  display: flex;
-  width: 100%;
-}
-
-.record {
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
   position: relative;
-  overflow: hidden;
-  background: wheat;
   display: flex;
-  height: 400px;
-  margin: 0 5px;
-  width: 2rem;
-}
-
-.record img {
-  object-fit: contain;
-  transform: scale(2);
   height: 100%;
-  width: 400px;
+  width: 100%;
 }
 
-.music {
+.records-section-title {
+  text-shadow: 3px 2px 0 var(--color-content1);
+  color: var(--background-secondary-4);
+  font-family: var(--font-music2);
+  text-transform: uppercase;
+  position: fixed;
+  font-size: 7rem;
+  height: 15vh;
+  z-index: 1;
+  top: 0;
+}
+
+.records-button-background {
+  background-color: var(--background-secondary-4);
+}
+
+.records-title-color {
+  color: var(--background-secondary-4);
+}
+
+.records-grid {
+  justify-content: center;
+  grid-template-columns: 1fr 1fr 1fr;
+  display: grid;
+  margin-top: 12vh;
+  flex-wrap: wrap;
+  height: 100%;
+  width: 60vw;
+}
+
+.records-grid-card {
+  background-color: aliceblue;
+  height: 30rem;
+  width: 25rem;
+}
+
+.records-grid-card:nth-child(3n + 1),
+.records-grid-card:nth-child(3n) {
+  margin-top: 10rem;
+}
+
+.record-card-image-container {
+  position: relative;
+  width: 25rem;
+}
+
+.record-card-image-container img {
+  width: 25rem;
+}
+
+.record-spinning-image {
   position: absolute;
+  border-radius: 50%;
+  object-fit: cover;
+  cursor: pointer;
+  height: 24rem;
+  width: 20rem;
   left: 0;
   top: 0;
+}
+
+.record-card-content {
+  background-color: antiquewhite;
+  justify-content: space-between;
+  font-family: var(--font-content);
+  color: var(--color-content2);
+  padding: 0.5rem 1rem;
+  display: flex;
+  width: 100%;
+}
+
+.record-card-year {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+.record-card-singer {
+  text-transform: capitalize;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.record-card-song {
+  text-transform: capitalize;
+  font-size: 1.5rem;
+  font-weight: 600;
 }

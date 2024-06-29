@@ -1,88 +1,51 @@
-import { useGSAP } from "@gsap/react";
-import { useRef } from "react";
-import gsap from "gsap";
+import { Navbar } from "../../components/Navbar/Navbar";
 
 import "./Records.css";
 
 export const Records = () => {
-  const recordsContainer = useRef();
-  gsap.registerPlugin(useGSAP);
-
-  useGSAP(() => {
-    const records = document.querySelectorAll(".record");
-
-    records.forEach((record) => {
-      const onMouseEnter = () => {
-        gsap.to(record, {
-          width: "25rem",
-        });
-      };
-
-      const onMouseLeave = () => {
-        gsap.to(record, {
-          width: "2rem",
-        });
-      };
-
-      record.addEventListener("mouseenter", onMouseEnter);
-      record.addEventListener("mouseleave", onMouseLeave);
-    }),
-      { scope: recordsContainer };
-  });
-
   return (
     <section className="section-records">
-      <div ref={recordsContainer} className="records-container">
-        <div className="records">
-          <div className="record">
-            <img src="./assets/1.jpg" alt="" className="music" />
-            <audio id="music0" controls="none">
-              <source
-                src="http://sheriffderek.consulting/audio/mp3/short.mp3"
-                type="audio/mp3"
-              />
-            </audio>
+      <Navbar
+        background={"records-button-background"}
+        color={"records-title-color"}
+      />
+      <h1 className="records-section-title">records</h1>
+      <div className="records-grid">
+        <div className="records-grid-card">
+          <div className="record-card-image-container">
+            <img src="../../assets/img/records/1.jpg" alt="" />
+            <img
+              className="record-spinning-image"
+              src="../../assets/img/records/1.jpg"
+              alt=""
+            />
           </div>
-          <div className="record">
-            <img src="" alt="" />
-          </div>
-          <div className="record">
-            <img src="" alt="" />
-          </div>
-          <div className="record">
-            <img src="" alt="" />
-          </div>
-          <div className="record">
-            <img src="" alt="" />
-          </div>
-          <div className="record">
-            <img src="" alt="" />
-          </div>
-          <div className="record">
-            <img src="" alt="" />
-          </div>
-          <div className="record">
-            <img src="" alt="" />
-          </div>
-          <div className="record">
-            <img src="" alt="" />
-          </div>
-          <div className="record">
-            <img src="" alt="" />
-          </div>
-          <div className="record">
-            <img src="" alt="" />
-          </div>
-          <div className="record">
-            <img src="" alt="" />
-          </div>
-          <div className="record">
-            <img src="" alt="" />
-          </div>
-          <div className="record">
-            <img src="" alt="" />
+          <div className="record-card-content">
+            <div>
+              <p className="record-card-year">year</p>
+              <p className="record-card-singer">singer</p>
+            </div>
+            <div>
+              <p className="record-card-song">song name name</p>
+            </div>
           </div>
         </div>
+
+        <div className="records-grid-card"></div>
+        <div className="records-grid-card"></div>
+        <div className="records-grid-card"></div>
+        <div className="records-grid-card"></div>
+        <div className="records-grid-card"></div>
+        <div className="records-grid-card"></div>
+        <div className="records-grid-card"></div>
+        <div className="records-grid-card"></div>
+        <div className="records-grid-card"></div>
+        <div className="records-grid-card"></div>
+        <div className="records-grid-card"></div>
+        <div className="records-grid-card"></div>
+        <div className="records-grid-card"></div>
+
+        <div className="records-grid-card"></div>
       </div>
     </section>
   );

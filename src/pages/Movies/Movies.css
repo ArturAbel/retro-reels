@@ -1,0 +1,43 @@
+.section-movies {
+  background-color: var(--background-secondary-3);
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  display: flex;
+  height: 100vh;
+  width: 100%;
+}
+
+.movies-section-title {
+  text-shadow: 3px 2px 0 var(--color-content1);
+  color: var(--background-secondary-4);
+  font-family: var(--font-music2);
+  text-transform: uppercase;
+  font-size: 7rem;
+  height: 15vh;
+}
+
+.movies-container {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  height: 75vh;
+  width: 100%;
+}
+
+.movies {
+  justify-content: center;
+  overflow: hidden;
+  display: flex;
+  width: 100%;
+}
+
+.movie {
+  align-items: flex-start;
+  background: wheat;
+  margin: 0 0.5rem;
+  overflow: hidden;
+  display: flex;
+  height: 35rem;
+  width: 4rem;
+}
