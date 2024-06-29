@@ -1,42 +1,45 @@
 .section-music-component {
+  justify-content: center;
+  align-items: center;
+  position: relative;
   overflow: hidden;
-  flex-shrink: 0;
   display: flex;
   height: 100vh;
   width: 100vw;
-  flex-grow: 0;
 }
 
 .music-component-record-container {
+  align-items: center;
   position: relative;
-  height: 80vh;
+  display: flex;
+  height: 100%;
   width: 70vw;
 }
 
 .music-component-record-image {
-  transform: translate(-50%, -50%);
   position: absolute;
-  height: 60rem;
-  width: 60rem;
-  top: 1150px;
-  left: 70%;
+  height: 50rem;
+  width: 50rem;
+  left: -10vh;
+  top: 11vh;
 }
 
 .music-component-cover-image {
-  box-shadow: rgba(0, 0, 0, 0.25) -5px -5px 28px,
-    rgba(0, 0, 0, 0.22) 0px -7px 10px;
-  transform: translate(-50%, -30%);
-  object-position: top;
-  position: relative;
+  box-shadow: rgba(0, 0, 0, 0.25) 5px 0px 28px,
+    rgba(0, 0, 0, 0.22) 10px 0px 10px;
   object-fit: cover;
-  height: 40rem;
-  width: 70rem;
-  left: 70%;
-  top: 90%;
+  transition: 0.5s;
+  height: 55rem;
+  width: 40rem;
+  z-index: 1;
+}
+
+.music-component-record-container:hover .music-component-cover-image {
+  transform: scale(1.03);
+  cursor: pointer;
 }
 
 .music-component-record-image:hover {
-  transform: scale(1.1);
   cursor: pointer;
 }
 
@@ -51,7 +54,7 @@
 
 .music-component-title {
   text-shadow: 3px 3px 0 var(--color-content1);
-  color: var(--background-secondary-8);
+  color: var(--background-main-3);
   font-family: var(--font-movies1);
   text-transform: uppercase;
   font-size: 4rem;
@@ -59,10 +62,10 @@
 }
 
 .music-component-arrow {
-  transform: scaleX(-1) rotate(40deg);
+  transform: scaleX(-1) rotate(20deg);
   position: absolute;
   width: 15rem;
-  bottom: 60vh;
-  right: 20vw;
+  top: 15vh;
+  right: 25vw;
   z-index: 2;
 }

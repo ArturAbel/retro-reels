@@ -38,5 +38,34 @@ export const bigCoverImage = "../../assets/img/main/cover.jpg";
 export const arrowRecords = "../../assets/img/hero/arrow1.png";
 
 // Tv Component
+export const arrowMovies = "../../assets/img/main/arrowMovies.png";
+export const arrowBooks = "../../assets/img/main/arrowBooks.png";
 export const tvSpinner1 = "../../assets/img/main/spinner3.png";
 export const tvSpinner2 = "../../assets/img/main/spinner4.png";
+export const booksImage1 = "../../assets/img/main/books1.png";
+export const booksImage2 = "../../assets/img/main/books2.png";
+export const booksImage3 = "../../assets/img/main/books3.png";
+export const tvGif = "../../assets/img/main/screen.gif";
+export const tvImage = "../../assets/img/main/tv.png";
+
+// Footer Component
+export const footerWords = [
+  "retro reels",
+  "retro reels",
+  "retro reels",
+  "retro reels",
+  "retro reels",
+  "retro reels",
+  "retro reels",
+  "retro reels",
+  "retro reels",
+  "retro reels",
+  "retro reels",
+  "retro reels",
+  "retro reels",
+  "retro reels",
+  "retro reels",
+  "retro reels",
+  "retro reels",
+  "retro reels",
+];

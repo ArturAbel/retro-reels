@@ -1,0 +1,24 @@
+.hero-galleries-container {
+  flex-direction: column;
+  justify-content: center;
+  overflow: hidden;
+  display: flex;
+  height: 70vh;
+  width: 100%;
+}
+
+.hero-gallery {
+  justify-content: center;
+  flex-direction: column;
+  display: flex;
+}
+
+.hero-gallery-col {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.col-2 {
+  justify-content: flex-end;
+}

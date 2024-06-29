@@ -1,43 +1,25 @@
-import { GalleryImage } from "../GalleryImage/GalleryImage";
+import { heroSpinners, heroImage } from "../../utilities/variables";
 import { SpinnerItem } from "../SpinnerItem/SpinnerItem";
-import {
-  heroImages1,
-  heroImages2,
-  heroSpinners,
-  heroImage,
-} from "../../utilities/variables";
 
 import "./Hero.css";
+import { HeroGallery } from "../HeroGallery/HeroGallery";
 
 export const Hero = ({ homeGalleryRef }) => {
   return (
-    <section className="section-hero">
-      <div className="hero-container">
+    <>
+      <section className="section-hero">
         <div className="hero-menu">
-          <div className="hero-menu-container">
-            <button className="button hero-menu-button ">menu</button>
-          </div>
+          <button className="button hero-menu-button">menu</button>
           <h4 className="hero-title">retro reels</h4>
         </div>
-        {heroSpinners.map((image, index) => {
-          return <SpinnerItem key={index} image={image} index={index} />;
-        })}
-        <img className="hero-image" src={heroImage} alt="hero image" />
-      </div>
-      <div className="hero-galleries-container">
-        <div ref={homeGalleryRef} className="hero-gallery">
-          <div className="hero-gallery-col col-1">
-            {heroImages1.map((image, index) => {
-              return <GalleryImage key={index} image={image} />;
-            })}
-          </div>
-          <div className="hero-gallery-col  col-2">
-            {heroImages2.map((image, index) => {
-              return <GalleryImage key={index} image={image} />;
-            })}
-          </div>
+        <div className="hero-container">
+          {heroSpinners.map((image, index) => (
+            <SpinnerItem key={index} image={image} index={index} />
+          ))}
+          <img className="hero-image" src={heroImage} alt="hero image" />
         </div>
-      </div>
-    </section>
+      </section>
+      <HeroGallery homeGalleryRef={homeGalleryRef} />
+    </>
   );
 };

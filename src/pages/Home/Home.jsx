@@ -1,12 +1,14 @@
-import { Hero } from "../../components/Hero/Hero";
 import { MusicComponent } from "../../components/MusicComponent/MusicComponent";
+import { TvComponent } from "../../components/TvComponent/TvComponent";
+import { FooterStrip } from "../../components/FooterStrip/FooterStrip";
+import { Footer } from "../../components/Footer/Footer";
+import { Hero } from "../../components/Hero/Hero";
 import { ScrollTrigger } from "gsap/all";
 import { useGSAP } from "@gsap/react";
 import { useRef } from "react";
 import gsap from "gsap";
 
 import "./Home.css";
-import { TvComponent } from "../../components/TvComponent/TvComponent";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -17,28 +19,8 @@ export const Home = () => {
   const tvSectionRef = useRef(null);
 
   useGSAP(() => {
-    const container = homeSectionRef.current;
-
-    gsap
-      .timeline({
-        scrollTrigger: {
-          trigger: container,
-          scrub: 2,
-          pin: true,
-          start: "top top",
-          end: "+=3000",
-        },
-      })
-
-      .to(container, {
-        x: () =>
-          -(container.scrollWidth - document.documentElement.clientWidth) +
-          "px",
-        ease: "none",
-      });
-
     gsap.to(".col-1", {
-      y: -400,
+      x: -500,
       ease: "none",
       scrollTrigger: {
         trigger: homeGalleryRef.current,
@@ -47,8 +29,9 @@ export const Home = () => {
         scrub: 2,
       },
     });
+
     gsap.to(".col-2", {
-      y: 400,
+      x: 500,
       ease: "none",
       scrollTrigger: {
         trigger: homeGalleryRef.current,
@@ -56,39 +39,47 @@ export const Home = () => {
         end: "+=3000",
         scrub: 2,
       },
-    }),
-      gsap.to(".music-component-record-image", {
-        y: -750,
-        rotation: 500,
-        ease: "none",
-        scrollTrigger: {
-          trigger: musicSectionRef.current,
-          start: "top bottom",
-          end: "+=2200",
-          scrub: 1,
-        },
-      }),
-      gsap.to(".tv-books-image2", {
-        y: 0,
-        ease: "none",
-        scrollTrigger: {
-          trigger: tvSectionRef.current,
-          start: "top top",
-          end: "+=2000",
-          scrub: 1,
-        },
-      }),
-      gsap.to(".tv-books-image1", {
-        y: 0,
-        ease: "none",
-        scrollTrigger: {
-          trigger: tvSectionRef.current,
-          start: "top top",
-          end: "+=1000",
-          scrub: 1,
-        },
-      }),
-      { scope: container };
+    });
+
+    gsap.to(".music-component-record-image", {
+      x: 400,
+      rotation: 500,
+      ease: "none",
+      scrollTrigger: {
+        trigger: homeGalleryRef.current,
+        start: "top 100%",
+        end: "+=1800",
+        scrub: 2,
+      },
+    });
+
+    gsap.from(".tv-books-image2", {
+      x: 700,
+      rotate: 30,
+      scrollTrigger: {
+        trigger: musicSectionRef.current,
+        start: "top bottom",
+        end: "+=1100",
+        scrub: 2,
+      },
+    });
+
+    gsap.from(".tv-books-image1", {
+      x: -600,
+      rotate: 60,
+      scrollTrigger: {
+        trigger: musicSectionRef.current,
+        ease: "power1.inOut",
+        end: "+=1100",
+        scrub: 2,
+      },
+    });
+    gsap.from(".separator", {
+      x: -450,
+      duration: 7,
+      repeat: -1,
+      ease: "none",
+    });
   });
 
   return (
@@ -96,6 +87,8 @@ export const Home = () => {
       <Hero />
       <MusicComponent musicSectionRef={musicSectionRef} />
       <TvComponent tvSectionRef={tvSectionRef} />
+      <FooterStrip />
+      <Footer />
     </section>
   );
 };
