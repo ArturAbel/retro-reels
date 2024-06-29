@@ -13,6 +13,7 @@
   --background-secondary-9: rgb(239, 75, 37);
   --background-light-1: rgba(250, 251, 241, 255);
   --background-light-2: rgba(247, 240, 231, 255);
+  --background-light-3: rgb(241, 241, 241);
   --background-dark: rgb(39, 39, 37);
   /* --background-main-3: rgb(240, 239, 107); */
   /* Text Color */
@@ -22,7 +23,6 @@
   /* FIlters */
   --drops-shadow: 3px -3px 10px #4c4c4c;
   --drops-shadow-books: 0px 15px 10px #000000;
-  --drops-shadow-light: 0px 15px 10px #ffffff;
 
   /* Fonts */
   --font-content-subTitle: "BN-Axel-Grotesk", sans-serif;
@@ -31,7 +31,7 @@
   --font-book: "Domine", sans-serif;
   --font-retro2: "PeaceBegins", sans-serif;
   --font-music1: "mexcellent3d", sans-serif;
-  --font-music2: "mexcellent", sans-serif;
+  --font-music2: "COOPBL", sans-serif;
   --font-retro1: "Psycho", sans-serif;
   --font-retro3: "Wizard", sans-serif;
 }
@@ -56,8 +56,8 @@
   src: url("../assets/fonts/music/mexcellent3d.otf") format("opentype");
 }
 @font-face {
-  font-family: "mexcellent";
-  src: url("../assets/fonts/music/mexcellent.otf") format("opentype");
+  font-family: "COOPBL";
+  src: url("../assets/fonts/music/COOPBL.ttf") format("opentype");
 }
 
 /* Content Fonts */

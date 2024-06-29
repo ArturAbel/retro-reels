@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import {
   bigRecordImage,
   bigCoverImage,
@@ -10,11 +11,14 @@ export const MusicComponent = ({ musicSectionRef }) => {
   return (
     <section ref={musicSectionRef} className="section-music-component">
       <div className="music-component-record-container">
-        <img
-          className="music-component-record-image"
-          src={bigRecordImage}
-          alt="record"
-        />
+        <Link to={"records"}>
+          <img
+            className="music-component-record-image"
+            src={bigRecordImage}
+            alt="record"
+          />
+        </Link>
+
         <img
           className="music-component-cover-image"
           src={bigCoverImage}

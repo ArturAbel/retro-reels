@@ -8,7 +8,7 @@ export const Navigation = () => {
     <nav className="section-navigation">
       <div className="navigation-top">
         <Link to={"/"} className="navigation-top-link">
-          back
+          home
         </Link>
         <h1 className="navigation-header">retro reels</h1>
         <Link className="navigation-top-link">admin</Link>

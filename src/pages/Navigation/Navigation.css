@@ -11,8 +11,8 @@
 .navigation-top {
   color: var(--background-secondary-8);
   justify-content: space-between;
-  align-items: center;
-  padding: 0 3rem;
+  align-items: flex-start;
+  padding: 3rem 5rem;
   outline: none;
   display: flex;
   height: 25vh;
@@ -20,11 +20,11 @@
 }
 
 .navigation-top-link {
-  font-family: var(--font-movies1);
   color: var(--background-secondary-8);
+  font-family: var(--font-movies1);
   text-transform: uppercase;
   font-weight: 600;
-  font-size: 3rem;
+  font-size: 2.5rem;
 }
 
 .navigation-links {
@@ -55,7 +55,7 @@
 
 .link-records {
   color: var(--background-secondary-8);
-  font-family: var(--font-music1);
+  font-family: var(--font-music2);
 }
 
 .link-books {
@@ -74,7 +74,7 @@
 .books-hover-icon,
 .records-hover-icon {
   vertical-align: middle;
-  font-size: 5rem;
+  font-size: 4rem;
   margin: 0 1rem;
 }
 
