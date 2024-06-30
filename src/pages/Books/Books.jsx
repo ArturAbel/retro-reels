@@ -1,3 +1,4 @@
+import { useDataContext } from "../../context/DataContext";
 import { BookTab } from "../../components/BookTab/BookTab";
 import { Navbar } from "../../components/Navbar/Navbar";
 import { useGSAP } from "@gsap/react";
@@ -6,6 +7,8 @@ import gsap from "gsap";
 import "./Books.css";
 
 export const Books = () => {
+  const { books } = useDataContext();
+
   gsap.registerPlugin(useGSAP);
 
   useGSAP(() => {
@@ -34,7 +37,6 @@ export const Books = () => {
           background: "none",
         });
       };
-
       books.addEventListener("mouseenter", onMouseEnter);
       books.addEventListener("mouseleave", onMouseLeave);
     });
@@ -48,7 +50,9 @@ export const Books = () => {
       />
       <h1 className="books-section-title">books</h1>
       <div className="books-container">
-        <BookTab />
+        {books.map((book) => {
+          return <BookTab key={book.id} book={book} />;
+        })}
       </div>
     </section>
   );

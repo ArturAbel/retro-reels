@@ -1,7 +1,7 @@
 :root {
   --background-main-1: rgb(255, 254, 211);
   --background-main-2: rgb(235, 223, 175);
-  --background-main-3: rgb(255, 255, 59);
+  --background-main-3: rgb(221, 221, 67);
 
   --background-secondary-1: rgba(196, 170, 215, 255);
   --background-secondary-2: rgb(177, 175, 255);
@@ -10,7 +10,7 @@
   --background-secondary-5: rgb(230, 101, 129);
   --background-secondary-6: rgba(163, 221, 201, 255);
   --background-secondary-7: rgba(254, 186, 175, 255);
-  --background-secondary-8: #f9cdce;
+  --background-secondary-8: #fb8f91;
   --background-secondary-9: rgb(239, 75, 37);
 
   --background-light-1: rgba(250, 251, 241, 255);
@@ -24,7 +24,7 @@
   /* --background-main-3: rgb(240, 239, 107); */
   /* Text Color */
   --color-content1: rgb(0, 0, 0);
-  --color-content2: rgb(39, 39, 37);
+  --color-content2: rgb(95, 95, 95);
 
   /* FIlters */
   --drops-shadow: 3px -3px 10px #4c4c4c;

@@ -1,18 +1,17 @@
 .hero-menu {
   justify-content: space-between;
-  align-items: flex-end;
+  align-items: center;
   position: relative;
   display: flex;
   height: 10vh;
-  width: 100%;
+  width: 100vw;
 }
 
 .hero-title {
   text-shadow: 3px 2px 0 var(--color-content1);
   font-family: var(--font-retro1);
   text-transform: uppercase;
-  margin-top: 2rem;
-  margin-right: 10rem;
+  margin-right: 3rem;
   font-size: 4rem;
   display: flex;
 }
@@ -20,7 +19,7 @@
 .hero-menu-button {
   text-align: center;
   font-size: 1.5rem;
-  margin-left: 4rem;
+  margin-left: 2rem;
   width: 10rem;
 }
 

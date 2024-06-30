@@ -1,5 +1,5 @@
-import { Navigation } from "./pages/Navigation/Navigation";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { Navigation } from "./pages/Navigation/Navigation";
 import { DataProvider } from "./context/DataContext";
 import { Records } from "./pages/Records/Records";
 import { Books } from "./pages/Books/Books";

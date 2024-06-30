@@ -4,8 +4,8 @@
   flex-direction: column;
   align-items: center;
   display: flex;
-  height: 100vh;
-  width: 100%;
+  min-height: 100vh;
+  width: 100vw;
 }
 
 .movies-section-title {
@@ -22,7 +22,7 @@
   align-items: center;
   display: flex;
   height: 75vh;
-  width: 100%;
+  width: 100vw;
 }
 
 .movies {
