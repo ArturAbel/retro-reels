@@ -5,8 +5,8 @@
   align-items: center;
   position: relative;
   display: flex;
-  height: 100%;
-  width: 100%;
+  min-height: 100%;
+  width: 100vw;
 }
 
 .records-section-title {
@@ -16,7 +16,7 @@
   text-transform: uppercase;
   position: fixed;
   font-size: 7rem;
-  height: 15vh;
+  height: 10rem;
   z-index: 1;
   top: 0;
 }

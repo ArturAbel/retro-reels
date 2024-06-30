@@ -20,34 +20,35 @@ export const Home = () => {
 
   useGSAP(() => {
     gsap.to(".col-1", {
-      x: -500,
+      x: -300,
       ease: "none",
       scrollTrigger: {
         trigger: homeGalleryRef.current,
         start: "top top",
-        end: "+=3000",
+        end: "+=1000",
         scrub: 2,
+        markers: true,
       },
     });
 
     gsap.to(".col-2", {
-      x: 500,
+      x: 300,
       ease: "none",
       scrollTrigger: {
         trigger: homeGalleryRef.current,
         start: "top top",
-        end: "+=3000",
+        end: "+=1000",
         scrub: 2,
       },
     });
 
     gsap.to(".music-component-record-image", {
-      x: 400,
+      x: 350,
       rotation: 500,
       ease: "none",
       scrollTrigger: {
-        trigger: homeGalleryRef.current,
-        start: "top 100%",
+        trigger: homeSectionRef.current,
+        start: "top center",
         end: "+=1800",
         scrub: 2,
       },
@@ -58,8 +59,8 @@ export const Home = () => {
       rotate: 30,
       scrollTrigger: {
         trigger: musicSectionRef.current,
-        start: "top bottom",
-        end: "+=1100",
+        start: "top center",
+        end: "+=800",
         scrub: 2,
       },
     });
@@ -70,12 +71,13 @@ export const Home = () => {
       scrollTrigger: {
         trigger: musicSectionRef.current,
         ease: "power1.inOut",
-        end: "+=1100",
+        start: "top center",
+        end: "+=800",
         scrub: 2,
       },
     });
     gsap.from(".separator", {
-      x: -450,
+      x: -440,
       duration: 7,
       repeat: -1,
       ease: "none",
@@ -87,7 +89,6 @@ export const Home = () => {
       <Hero />
       <MusicComponent musicSectionRef={musicSectionRef} />
       <TvComponent tvSectionRef={tvSectionRef} />
-      <FooterStrip />
       <Footer />
     </section>
   );

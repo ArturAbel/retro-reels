@@ -1,42 +1,46 @@
 .section-navigation {
-  background-color: var(--background-dark);
+  background-color: var(--background-light-1);
   justify-content: center;
   flex-direction: column;
   align-items: center;
+  min-height: 100vh;
   display: flex;
-  height: 100vh;
-  width: 100%;
+  width: 100vw;
 }
 
 .navigation-top {
-  color: var(--background-secondary-8);
   justify-content: space-between;
+  color: var(--background-dark);
   align-items: flex-start;
-  padding: 3rem 5rem;
+  padding: 0rem 5rem;
   outline: none;
   display: flex;
-  height: 25vh;
-  width: 100%;
+  height: 20vh;
+  width: 90%;
 }
 
 .navigation-top-link {
-  color: var(--background-secondary-8);
   font-family: var(--font-movies1);
+  color: var(--background-dark);
   text-transform: uppercase;
   font-weight: 600;
   font-size: 2.5rem;
 }
 
+.navigation-top-link:hover {
+  color: var(--background-secondary-9);
+}
+
 .navigation-links {
   justify-content: center;
-  text-align: center;
   flex-direction: column;
   align-items: center;
+  text-align: center;
   line-height: 1.1;
   outline: none;
   display: flex;
   height: 75vh;
-  width: 80vw;
+  width: 100vw;
 }
 
 .navigation-header {
@@ -54,19 +58,19 @@
 }
 
 .link-records {
-  color: var(--background-secondary-8);
   font-family: var(--font-music2);
+  color: var(--background-dark);
 }
 
 .link-books {
-  color: var(--background-secondary-8);
   font-family: var(--font-book);
+  color: var(--background-dark);
   text-transform: capitalize;
 }
 
 .link-movies {
-  color: var(--background-secondary-8);
   font-family: var(--font-movies1);
+  color: var(--background-dark);
   font-size: 13rem;
 }
 
@@ -85,8 +89,7 @@
 }
 
 .navigation-main-link:hover {
-  color: var(--background-light-1);
-  transition: 0.5s;
+  color: var(--background-secondary-9);
 }
 
 .link-records:hover .records-hover-icon {

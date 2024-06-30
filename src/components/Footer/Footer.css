@@ -1,12 +1,14 @@
 .section-footer {
-  background-color: var(--color-content2);
-  color: var(--background-secondary-8);
+  border-top: 1px solid var(--background-dark);
+  background-color: var(--color-content3);
+  color: var(--background-dark);
   justify-content: center;
   flex-direction: column;
   align-items: center;
+  min-height: 100vh;
+  overflow: hidden;
   display: flex;
-  height: 100vh;
-  width: 100%;
+  width: 100vw;
 }
 
 .footer-subscribe-container {
@@ -15,7 +17,7 @@
   align-items: center;
   display: flex;
   height: 50vh;
-  width: 100%;
+  width: 100vw;
 }
 
 .footer-subscribe-title {
@@ -25,10 +27,10 @@
 }
 
 .footer-subscribe-input {
-  box-shadow: 4px 4px var(--background-secondary-8);
-  border: 2px solid var(--background-secondary-8);
+  box-shadow: 4px 4px var(--background-main-3);
+  border: 2px solid var(--background-dark);
+  color: var(--background-dark);
   background-color: transparent;
-  color: var(--background-secondary-8);
   border-radius: 5px;
   padding: 5px 10px;
   font-size: 1.5rem;
@@ -47,10 +49,11 @@
 }
 
 .footer-button {
-  background-color: var(--background-secondary-8);
+  background-color: var(--background-main-3);
   font-family: var(--color-content2);
   text-transform: capitalize;
-  border: 3px solid black;
+  border: 2px solid black;
+  box-shadow: 0.1em 0.1em;
   border-radius: 0.4em;
   padding: 0.4em 1em;
   font-weight: 900;
@@ -72,7 +75,7 @@
   align-items: center;
   display: flex;
   height: 50vh;
-  width: 100%;
+  width: 100vw;
 }
 
 .footer-social-links {

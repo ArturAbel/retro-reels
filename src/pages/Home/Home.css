@@ -1,7 +1,5 @@
 .section-home {
-  font-family: var(--font-movies1);
-  overflow: hidden;
   font-size: 5rem;
-  height: 100%;
+  max-height: 100%;
   width: 100vw;
 }
