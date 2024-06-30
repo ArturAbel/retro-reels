@@ -1,8 +1,21 @@
+import { useDataContext } from "../../context/DataContext";
 import { Navbar } from "../../components/Navbar/Navbar";
+import { Record } from "../../components/Record/Record";
+import { RiCloseLargeLine } from "react-icons/ri";
+import { useState } from "react";
 
 import "./Records.css";
 
 export const Records = () => {
+  const [youtubeDisplay, setYoutubeDisplay] = useState(false);
+  const [video, setVideo] = useState("");
+  const { records } = useDataContext();
+
+  const handleCloseYoutubeButton = () => {
+    setYoutubeDisplay(false);
+    setVideo("");
+  };
+
   return (
     <section className="section-records">
       <Navbar
@@ -11,42 +24,26 @@ export const Records = () => {
       />
       <h1 className="records-section-title">records</h1>
       <div className="records-grid">
-        <div className="records-grid-card">
-          <div className="record-card-image-container">
-            <img src="../../assets/img/records/1.jpg" alt="" />
-            <img
-              className="record-spinning-image"
-              src="../../assets/img/records/1.jpg"
-              alt=""
+        {records.map((record) => {
+          return (
+            <Record
+              setYoutubeDisplay={setYoutubeDisplay}
+              setVideo={setVideo}
+              record={record}
+              key={record.id}
             />
-          </div>
-          <div className="record-card-content">
-            <div>
-              <p className="record-card-year">year</p>
-              <p className="record-card-singer">singer</p>
-            </div>
-            <div>
-              <p className="record-card-song">song name name</p>
-            </div>
-          </div>
-        </div>
-
-        <div className="records-grid-card"></div>
-        <div className="records-grid-card"></div>
-        <div className="records-grid-card"></div>
-        <div className="records-grid-card"></div>
-        <div className="records-grid-card"></div>
-        <div className="records-grid-card"></div>
-        <div className="records-grid-card"></div>
-        <div className="records-grid-card"></div>
-        <div className="records-grid-card"></div>
-        <div className="records-grid-card"></div>
-        <div className="records-grid-card"></div>
-        <div className="records-grid-card"></div>
-        <div className="records-grid-card"></div>
-
-        <div className="records-grid-card"></div>
+          );
+        })}
       </div>
+      {youtubeDisplay && (
+        <div className="youtube-video-container">
+          <RiCloseLargeLine
+            onClick={handleCloseYoutubeButton}
+            className="youtube-close-icon"
+          />
+          <iframe src={video} width={400} height={300}></iframe>
+        </div>
+      )}
     </section>
   );
 };

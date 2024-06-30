@@ -1,0 +1,78 @@
+.records-grid-card {
+  height: 30rem;
+  width: 20rem;
+}
+
+.record-card-image-container {
+  position: relative;
+  width: 20rem;
+}
+
+.record-still-image {
+  width: 20rem;
+}
+
+.record-spinning-image {
+  position: absolute;
+  border-radius: 50%;
+  object-fit: cover;
+  cursor: pointer;
+  height: 20rem;
+  width: 20rem;
+  left: 0;
+  top: 0;
+}
+
+.record-card-image-container:hover .record-spinning-image {
+  animation: spin 6s infinite linear;
+}
+
+.record-card-content {
+  justify-content: space-between;
+  font-family: var(--font-content);
+  color: var(--color-content2);
+  padding: 0.5rem 0.5rem;
+  display: flex;
+  width: 100%;
+  height: 9rem;
+}
+
+.record-card-year {
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+
+.record-card-singer {
+  text-transform: capitalize;
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.record-card-song {
+  text-transform: capitalize;
+  text-align: right;
+  font-size: 1.1rem;
+  font-weight: 400;
+}
+
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.youtube-video-container {
+  transform: translate(-50%, -50%);
+  border-radius: 15px;
+  position: fixed;
+  height: 35rem;
+  width: 40rem;
+  z-index: 2;
+  left: 50%;
+  top: 50%;
+}
+
+.youtube-close-icon {
+  font-size: 4rem;
+  cursor: pointer;
+}
