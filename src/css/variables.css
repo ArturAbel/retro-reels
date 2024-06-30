@@ -2,6 +2,7 @@
   --background-main-1: rgb(255, 254, 211);
   --background-main-2: rgb(235, 223, 175);
   --background-main-3: rgb(255, 255, 59);
+
   --background-secondary-1: rgba(196, 170, 215, 255);
   --background-secondary-2: rgb(177, 175, 255);
   --background-secondary-3: rgb(127, 163, 212);
@@ -11,10 +12,15 @@
   --background-secondary-7: rgba(254, 186, 175, 255);
   --background-secondary-8: #f9cdce;
   --background-secondary-9: rgb(239, 75, 37);
+
   --background-light-1: rgba(250, 251, 241, 255);
   --background-light-2: rgba(247, 240, 231, 255);
   --background-light-3: rgb(241, 241, 241);
+  --background-light-4: rgb(243, 223, 193);
+
   --background-dark: rgb(39, 39, 37);
+  --background-dark-2: rgb(26, 28, 26);
+
   /* --background-main-3: rgb(240, 239, 107); */
   /* Text Color */
   --color-content1: rgb(0, 0, 0);
@@ -25,15 +31,22 @@
   --drops-shadow-books: 0px 15px 10px #000000;
 
   /* Fonts */
-  --font-content-subTitle: "BN-Axel-Grotesk", sans-serif;
+
   --font-movies1: "CourierPrime-Regular", sans-serif;
+
   --font-content: "FragmentMono-Regular", sans-serif;
-  --font-book: "Domine", sans-serif;
-  --font-retro2: "PeaceBegins", sans-serif;
+  --font-content-subTitle: "BN-Axel-Grotesk", sans-serif;
+
   --font-music1: "mexcellent3d", sans-serif;
   --font-music2: "COOPBL", sans-serif;
+
   --font-retro1: "Psycho", sans-serif;
+  --font-retro2: "PeaceBegins", sans-serif;
   --font-retro3: "Wizard", sans-serif;
+
+  --font-book: "type", sans-serif;
+  --font-book2: "rheinmetall", sans-serif;
+  --font-book3: "eminenz", sans-serif;
 }
 
 /* Retro Fonts */
@@ -71,8 +84,18 @@
 }
 
 /* Book Fonts */
-
-@import url("https://fonts.googleapis.com/css2?family=Domine:wght@400..700&display=swap");
+@font-face {
+  font-family: "type";
+  src: url("../assets/fonts/books/type.ttf") format("truetype");
+}
+@font-face {
+  font-family: "rheinmetall";
+  src: url("../assets/fonts/books/rheinmetall.ttf") format("truetype");
+}
+@font-face {
+  font-family: "eminenz";
+  src: url("../assets/fonts/books/eminenz.ttf") format("truetype");
+}
 
 /* Movies Fonts */
 @font-face {

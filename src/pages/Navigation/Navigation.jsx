@@ -22,7 +22,7 @@ export const Navigation = () => {
           </Link>
         </div>
         <div>
-          <Link className="navigation-main-link link-books">
+          <Link to={'/books'} className="navigation-main-link link-books">
             <FaPeace className="books-hover-icon" />
             books
             <FaPeace className="books-hover-icon" />

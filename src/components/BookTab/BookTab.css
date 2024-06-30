@@ -1,0 +1,64 @@
+.book-container {
+  border-bottom: 1px var(--background-dark) solid;
+  border-top: 1px var(--background-dark) solid;
+  justify-content: center;
+  flex-direction: column;
+  padding-left: 20rem;
+  position: relative;
+  display: flex;
+  height: 7rem;
+}
+
+.book-image-container {
+  position: absolute;
+  width: 20rem;
+  height: 30rem;
+  right: 20rem;
+  top: -12rem;
+  opacity: 0;
+  z-index: 1;
+}
+
+.book-image-inner {
+  transform: translate(-50%, -50%);
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 50%;
+  top: 50%;
+}
+
+.book-image {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+
+.book-tab-content {
+  position: relative;
+  cursor: pointer;
+  font-size: 2rem;
+  display: flex;
+  gap: 3rem;
+}
+
+.book-tab-name {
+  text-transform: uppercase;
+  font-family: var(--font-book);
+  font-weight: 600;
+}
+.book-tab-author {
+  font-family: var(--font-book3);
+  text-transform: capitalize;
+  font-weight: 600;
+}
+
+.book-tab-year {
+  font-family: var(--font-book);
+}
+
+.book-tab-icon {
+  vertical-align: middle;
+  align-self: center;
+  display: flex;
+}

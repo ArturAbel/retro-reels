@@ -1,0 +1,36 @@
+.section-books {
+  background-color: var(--background-light-3);
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  display: flex;
+  height: 100vh;
+  width: 100%;
+}
+
+.books-button-background {
+  background-color: var(--background-main-2);
+}
+
+.books-title-color {
+  color: var(--background-main-2);
+}
+
+.books-section-title {
+  text-shadow: 3px 2px 0 var(--color-content1);
+  color: var(--background-main-2);
+  font-family: var(--font-book);
+  text-transform: uppercase;
+  position: fixed;
+  font-size: 7rem;
+  height: 15vh;
+  z-index: 1;
+  top: 0;
+}
+
+.books-container {
+  margin-top: 20rem;
+  height: 85vh;
+  width: 100%;
+}

@@ -30,19 +30,13 @@
 }
 
 .records-grid {
-  justify-content: center;
   grid-template-columns: 1fr 1fr 1fr;
-  display: grid;
+  justify-content: center;
   margin-top: 12vh;
   flex-wrap: wrap;
+  display: grid;
   height: 100%;
   width: 60vw;
-}
-
-.records-grid-card {
-  background-color: aliceblue;
-  height: 30rem;
-  width: 25rem;
 }
 
 .records-grid-card:nth-child(3n + 1),
@@ -50,49 +44,3 @@
   margin-top: 10rem;
 }
 
-.record-card-image-container {
-  position: relative;
-  width: 25rem;
-}
-
-.record-card-image-container img {
-  width: 25rem;
-}
-
-.record-spinning-image {
-  position: absolute;
-  border-radius: 50%;
-  object-fit: cover;
-  cursor: pointer;
-  height: 24rem;
-  width: 20rem;
-  left: 0;
-  top: 0;
-}
-
-.record-card-content {
-  background-color: antiquewhite;
-  justify-content: space-between;
-  font-family: var(--font-content);
-  color: var(--color-content2);
-  padding: 0.5rem 1rem;
-  display: flex;
-  width: 100%;
-}
-
-.record-card-year {
-  font-size: 1.5rem;
-  font-weight: 400;
-}
-
-.record-card-singer {
-  text-transform: capitalize;
-  font-size: 1.5rem;
-  font-weight: 600;
-}
-
-.record-card-song {
-  text-transform: capitalize;
-  font-size: 1.5rem;
-  font-weight: 600;
-}
