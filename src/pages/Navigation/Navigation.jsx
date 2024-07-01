@@ -11,7 +11,9 @@ export const Navigation = () => {
           home
         </Link>
         <h1 className="navigation-header">retro reels</h1>
-        <Link className="navigation-top-link">admin</Link>
+        <Link to={"/admin"} className="navigation-top-link">
+          admin
+        </Link>
       </div>
       <div className="navigation-links">
         <div>
