@@ -22,14 +22,14 @@ export const Navigation = () => {
           </Link>
         </div>
         <div>
-          <Link to={'/books'} className="navigation-main-link link-books">
+          <Link to={"/books"} className="navigation-main-link link-books">
             <FaPeace className="books-hover-icon" />
             books
             <FaPeace className="books-hover-icon" />
           </Link>
         </div>
         <div>
-          <Link className="navigation-main-link link-movies">
+          <Link to={"/movies"} className="navigation-main-link link-movies">
             <FaPeace className="movies-hover-icon" />
             movies
             <FaPeace className="movies-hover-icon" />

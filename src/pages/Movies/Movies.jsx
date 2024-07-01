@@ -1,71 +1,49 @@
+import { MoviePoster } from "../../components/MoviePoster/MoviePoster";
 import { Navbar } from "../../components/Navbar/Navbar";
-import { useGSAP } from "@gsap/react";
-import { useRef } from "react";
-import gsap from "gsap";
+import { useState } from "react";
 
 import "./Movies.css";
+import { useDataContext } from "../../context/DataContext";
 
 export const Movies = () => {
-  const moviesContainer = useRef();
-  gsap.registerPlugin(useGSAP);
+  const [movieDetails, setMovieDetails] = useState(null);
+  const { movies } = useDataContext();
 
-  useGSAP(() => {
-    const movies = document.querySelectorAll(".movie");
-
-    movies.forEach((movie) => {
-      const onMouseEnter = () => {
-        gsap.to(movie, {
-          width: "30rem",
-        });
-      };
-
-      const onMouseLeave = () => {
-        gsap.to(movie, {
-          width: "30rem",
-        });
-      };
-
-      movie.addEventListener("mouseenter", onMouseEnter);
-      movie.addEventListener("mouseleave", onMouseLeave);
-    }),
-      { scope: moviesContainer };
-  });
+  const { name, year, genre, director, summary } = movieDetails || {};
 
   return (
     <section className="section-movies">
-      <Navbar background={""} color={""} />
-      <h1 className="movies-section-title">records</h1>
-      <div ref={moviesContainer} className="movies-container">
-        <div className="movies">
-          <div className="movie">
-            <img src="" alt="" />
-          </div>
-          <div className="movie">
-            <img src="" alt="" />
-          </div>
-          <div className="movie">
-            <img src="" alt="" />
-          </div>
-          <div className="movie">
-            <img src="" alt="" />
-          </div>
-          <div className="movie">
-            <img src="" alt="" />
-          </div>
-          <div className="movie">
-            <img src="" alt="" />
-          </div>
-          <div className="movie">
-            <img src="" alt="" />
-          </div>
-          <div className="movie">
-            <img src="" alt="" />
-          </div>
-          <div className="movie">
-            <img src="" alt="" />
+      <Navbar
+        background={"movies-button-background"}
+        color={"movies-title-color"}
+      />
+      <h1 className="movies-section-title">movies</h1>
+      <section className="movies-section-divider">
+        <div className="movies-posters-container">
+          <div className="movies-grid">
+            {movies.map((movie) => {
+              return (
+                <MoviePoster
+                  key={movie.id}
+                  setMovieDetails={setMovieDetails}
+                  movie={movie}
+                />
+              );
+            })}
           </div>
         </div>
-      </div>
+        <div className="movie-info-container">
+          {movieDetails && (
+            <>
+              <h4 className="movie-title">
+                {name} / {year} / {genre}
+              </h4>
+              <p className="movie-director">{director}</p>
+              <p className="movie-summary">{summary}</p>
+            </>
+          )}
+        </div>
+      </section>
     </section>
   );
 };

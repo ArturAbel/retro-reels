@@ -27,7 +27,7 @@ export const TvComponent = ({ tvSectionRef }) => {
         />
       </div>
       <div className="tv-component-container">
-        <Link to={'books'}>
+        <Link to={"books"}>
           <div className="tv-books-container">
             <img className="tv-books-image1" src={booksImage1} alt="books" />
             <img className="tv-books-image2" src={booksImage2} alt="books" />
@@ -37,18 +37,20 @@ export const TvComponent = ({ tvSectionRef }) => {
           </div>
         </Link>
         <div className="tv-container">
-          <div className="tv-image-container">
-            <img className="tv-image" src={tvImage} alt="tv" />
-            <div className="tv-screen">
-              <img
-                className="tv-screen-gif"
-                src={tvGif}
-                alt="movie"
-                height={"300px"}
-                width={"350px"}
-              />
+          <Link to={'movies'}>
+            <div className="tv-image-container">
+              <img className="tv-image" src={tvImage} alt="tv" />
+              <div className="tv-screen">
+                <img
+                  className="tv-screen-gif"
+                  src={tvGif}
+                  alt="movie"
+                  height={"300px"}
+                  width={"350px"}
+                />
+              </div>
             </div>
-          </div>
+          </Link>
         </div>
       </div>
       <div className="tv-component-title-container">

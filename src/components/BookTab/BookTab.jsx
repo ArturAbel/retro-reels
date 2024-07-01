@@ -3,7 +3,7 @@ import { GoArrowRight } from "react-icons/go";
 import "./BookTab.css";
 
 export const BookTab = ({ book }) => {
-  const { images, title, author, year } = book;
+  const { images, title, author, pages } = book;
 
   return (
     <div className="book-container ">
@@ -15,7 +15,7 @@ export const BookTab = ({ book }) => {
       <div className="book-tab-content">
         <p className="book-tab-book-title">{title}</p>
         <p className="book-tab-author">{`(${author})`}</p>
-        <p className="book-tab-year">{year}</p>
+        <p className="book-tab-pages">{pages}</p>
         <GoArrowRight className="book-tab-icon" />
       </div>
     </div>

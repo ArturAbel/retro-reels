@@ -11,7 +11,9 @@
   },
   "dependencies": {
     "@gsap/react": "^2.1.1",
+    "@studio-freight/react-lenis": "^0.0.47",
     "firebase": "^10.12.2",
+    "lenis": "^1.1.5",
     "nanoid": "^5.0.7",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",

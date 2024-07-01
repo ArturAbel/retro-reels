@@ -1,6 +1,5 @@
 import { MusicComponent } from "../../components/MusicComponent/MusicComponent";
 import { TvComponent } from "../../components/TvComponent/TvComponent";
-import { FooterStrip } from "../../components/FooterStrip/FooterStrip";
 import { Footer } from "../../components/Footer/Footer";
 import { Hero } from "../../components/Hero/Hero";
 import { ScrollTrigger } from "gsap/all";
@@ -27,7 +26,6 @@ export const Home = () => {
         start: "top top",
         end: "+=1000",
         scrub: 2,
-        markers: true,
       },
     });
 

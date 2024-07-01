@@ -1,0 +1,12 @@
+.movie-poster {
+   cursor: pointer;
+   height: 30rem;
+   width: 20rem;
+   z-index: 1;
+ }
+ 
+ .movie-poster-image {
+   height: 100%;
+   width: 100%;
+ }
+ 

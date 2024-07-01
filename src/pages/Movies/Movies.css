@@ -1,43 +1,83 @@
 .section-movies {
-  background-color: var(--background-secondary-3);
-  justify-content: center;
+  background-color: var(--background-light-3);
   flex-direction: column;
   align-items: center;
   display: flex;
-  min-height: 100vh;
+  height: 100%;
   width: 100vw;
+}
+
+.movies-button-background {
+  background-color: var(--color-content3);
+}
+
+.movies-title-color {
+  color: var(--color-content3);
 }
 
 .movies-section-title {
   text-shadow: 3px 2px 0 var(--color-content1);
-  color: var(--background-secondary-4);
-  font-family: var(--font-music2);
+  font-family: var(--font-movies1);
+  color: var(--color-content3);
   text-transform: uppercase;
   font-size: 7rem;
+  position: fixed;
   height: 15vh;
+  z-index: 0;
 }
 
-.movies-container {
-  justify-content: center;
-  align-items: center;
+.movies-section-divider {
+  justify-content: flex-start;
+  align-items: flex-start;
   display: flex;
-  height: 75vh;
+}
+.movies-posters-container {
+  height: 100%;
   width: 100vw;
 }
 
-.movies {
-  justify-content: center;
-  overflow: hidden;
-  display: flex;
-  width: 100%;
+.movies-grid {
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  margin-top: 10rem;
+  display: grid;
+  row-gap: 2rem;
+  column-gap: 2rem;
+  height: 100%;
+  width: 50vw;
 }
 
-.movie {
-  align-items: flex-start;
-  background: wheat;
-  margin: 0 0.5rem;
-  overflow: hidden;
+.movie-poster:nth-child(2n) {
+  margin-top: 5rem;
+}
+
+.movie-info-container {
+  flex-direction: column;
+  padding-left: 2rem;
+  padding-top: 5rem;
+  position: fixed;
   display: flex;
-  height: 35rem;
-  width: 4rem;
+  height: 100%;
+  width: 30vw;
+  right: 0;
+}
+
+.movie-title {
+  font-family: var(--font-content);
+  text-transform: uppercase;
+  margin-right: 3rem;
+  font-size: 2rem;
+}
+
+.movie-director {
+  font-family: var(--font-content);
+  text-transform: capitalize;
+  font-size: 1.8rem;
+}
+
+.movie-summary {
+  font-family: var(--font-book2);
+  text-transform: capitalize;
+  margin-right: 3rem;
+  font-size: 1.3rem;
+  margin-top: 5rem;
 }

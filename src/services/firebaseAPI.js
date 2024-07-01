@@ -25,14 +25,14 @@ export const getBooks = async () => {
   }
 };
 
-// export const getMovies = async () => {
-//   try {
-//     const moviesCollection = collection(db, "movies");
-//     const moviesSnapshot = await getDocs(moviesCollection);
-//     const moviesData = moviesSnapshot.map((doc) => doc.data());
-//     console.log(moviesData);
-//   } catch (error) {
-//     console.error(`Unable to fetch movies`, error);
-//     return [];
-//   }
-// };
+export const getMovies = async () => {
+  try {
+    const moviesCollection = collection(db, "movies");
+    const moviesSnapshot = await getDocs(moviesCollection);
+    const moviesArray = moviesSnapshot.docs;
+    return moviesArray.map((doc) => ({ id: doc.id, ...doc.data() }));
+  } catch (error) {
+    console.error(`Unable to fetch movies`, error);
+    return [];
+  }
+};

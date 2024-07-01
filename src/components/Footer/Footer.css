@@ -1,6 +1,6 @@
 .section-footer {
   border-top: 1px solid var(--background-dark);
-  background-color: var(--color-content3);
+  background-color: var(--color-light3);
   color: var(--background-dark);
   justify-content: center;
   flex-direction: column;
