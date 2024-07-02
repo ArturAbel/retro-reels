@@ -63,9 +63,9 @@
 }
 
 .link-books {
-  font-family: var(--font-book);
+  font-family: var(--font-book1);
   color: var(--background-dark);
-  text-transform: capitalize;
+  text-transform: uppercase;
 }
 
 .link-movies {

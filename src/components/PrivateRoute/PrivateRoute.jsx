@@ -1,7 +1,7 @@
 import { useAuthContext } from "../../context/AuthContext";
 import { Navigate } from "react-router-dom";
 
-export const PrivateRoute = ({ component: Component, ...rest }) => {
+export const PrivateRoute = ({children}) => {
   const { user, loading } = useAuthContext();
 
   if (loading) {
@@ -9,7 +9,7 @@ export const PrivateRoute = ({ component: Component, ...rest }) => {
   }
 
   if (user) {
-    return <Component {...rest} />;
+    return children;
   }
 
   return <Navigate to={"/login"} />;
