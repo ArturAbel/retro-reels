@@ -1,0 +1,36 @@
+.navbar-admin {
+  border-bottom: 1px black solid;
+  align-items: center;
+  display: flex;
+  height: 10vh;
+  width: 100%;
+}
+
+.navbar-admin-logout-button-container {
+  align-items: center;
+  display: flex;
+  height: 100%;
+  width: 20%;
+}
+
+.navbar-admin-logout-button {
+  margin-left: 2rem;
+  height: 3.5rem;
+}
+
+.navbar-admin-buttons-container {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  width: 60%;
+  gap: 2rem;
+}
+
+.navbar-link {
+  font-size: 1.3rem;
+  color: inherit;
+}
+
+.navbar-link.active {
+  background-color: var(--background-main-3);
+}

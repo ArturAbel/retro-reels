@@ -1,0 +1,10 @@
+.section-admin-records {
+   grid-template-columns: 1fr 1fr;
+   scrollbar-width: none;
+   justify-items: center;
+   overflow-y: scroll;
+   display: grid;
+   height: 90vh;
+   width: 100vw;
+ }
+ 
