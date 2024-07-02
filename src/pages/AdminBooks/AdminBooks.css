@@ -1,0 +1,14 @@
+.section-admin-books {
+   grid-template-columns: 1fr 1fr;
+   scrollbar-width: none;
+   justify-items: center;
+   overflow-y: scroll;
+   display: grid;
+   height: 90vh;
+   width: 100vw;
+ }
+ 
+ .admin-books-search{
+   height: 10vh;
+   border: 1px solid black;
+ }

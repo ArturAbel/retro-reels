@@ -1,0 +1,109 @@
+.admin-movie-card {
+   height: 60vh;
+   width: 100%;
+   padding: 5rem;
+ }
+ 
+ .admin-movie-card:nth-child(2n + 1) {
+   border-right: 1px black solid;
+ }
+ 
+ .admin-movie-buttons {
+   background-color: var(--background-light-3);
+   justify-content: flex-start;
+   display: flex;
+ }
+ 
+ .admin-movie-button {
+   background-color: transparent;
+   color: var(--color-content3);
+   justify-content: center;
+   align-items: center;
+   border-radius: 50%;
+   cursor: pointer;
+   height: 3.5rem;
+   display: flex;
+   width: 3.5rem;
+   border: none;
+ }
+ 
+ .admin-movie-button:hover {
+   color: black;
+ }
+ 
+ .admin-movie-icon {
+   font-size: 2.3rem;
+ }
+ 
+ .admin-movie-card-container {
+   display: flex;
+   height: 100%;
+   width: 100%;
+ }
+ 
+ .admin-movie-image {
+   justify-content: flex-start;
+   align-self: baseline;
+   border-radius: 15px;
+   padding-right: 1rem;
+   object-fit: contain;
+   margin-top: 1rem;
+   display: flex;
+   width: 80%;
+ }
+ 
+ .admin-movie-inputs {
+   width: 100%;
+   padding: 0 0.5rem;
+ }
+ .admin-movie-input-container {
+   flex-direction: column;
+   display: flex;
+ }
+ 
+ .admin-movie-input-container label {
+   font-family: var(--color-content1);
+   text-decoration: underline;
+   text-transform: uppercase;
+   margin: 0.5rem 0;
+   font-size: 0.9rem;
+ }
+ 
+ .admin-movie-input-container input {
+   font-family: var(--color-content1);
+   background-color: transparent;
+   font-size: 1.2rem;
+   border: none;
+ }
+ 
+ .admin-movie-input-container textarea {
+   scrollbar-color: var(--background-light-2) white;
+   font-family: var(--color-content1);
+   scrollbar-width: thin;
+   font-size: 1.2rem;
+   height: 10vh;
+   border: none;
+ }
+ 
+ .admin-movie-input-container textarea:focus,
+ input:focus {
+   outline: none;
+ }
+ 
+ .tab-panel-add-movie {
+   margin: 5rem 0;
+   border: none;
+   height: 40vh;
+   width: 42vw;
+ }
+ 
+ .tab-panel-add-movie:hover {
+   filter: brightness(0.9);
+   cursor: pointer;
+ }
+ 
+ .tab-panel-add-movie-icon {
+   color: var(--color-content3);
+   font-size: 8rem;
+ }
+ 

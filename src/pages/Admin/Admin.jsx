@@ -7,9 +7,7 @@ export const Admin = () => {
   return (
     <section className="section-admin">
       <AdminNavbar />
-      <div className="admin-vertical-tabs">
-        <Outlet />
-      </div>
+      <Outlet />
     </section>
   );
 };

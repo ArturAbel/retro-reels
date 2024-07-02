@@ -43,9 +43,7 @@ export const BookReview = () => {
           <div className="book-minor-details-container">
             <span className="book-content-genre">
               <strong>genre:</strong>
-              {genre.map((text, index) => (
-                <span key={index}>{text}</span>
-              ))}
+              {genre}
             </span>
             <strong>pages:</strong>
             <span>{pages}</span>
