@@ -1,5 +1,6 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import { PrivateRoute } from "./components/PrivateRoute/PrivateRoute";
+import { AdminRecords } from "./pages/AdminRecords/AdminRecords";
 import { BookReview } from "./components/BookReview/BookReview";
 import { Navigation } from "./pages/Navigation/Navigation";
 import { AuthProvider } from "./context/AuthContext";
@@ -49,6 +50,20 @@ const router = createBrowserRouter([
         <Admin />
       </PrivateRoute>
     ),
+    children: [
+      {
+        path: "admin-records",
+        element: <AdminRecords />,
+      },
+      {
+        path: "admin-books",
+        element: "",
+      },
+      {
+        path: "admin-movies",
+        element: "",
+      },
+    ],
   },
 ]);
 

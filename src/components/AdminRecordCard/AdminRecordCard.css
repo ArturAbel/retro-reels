@@ -1,0 +1,108 @@
+.admin-record-card {
+  height: 60vh;
+  width: 100%;
+  padding: 5rem;
+}
+
+.admin-record-card:nth-child(2n + 1) {
+  border-right: 1px black solid;
+}
+
+.admin-record-buttons {
+  background-color: var(--background-light-3);
+  justify-content: flex-start;
+  display: flex;
+}
+
+.admin-record-button {
+  background-color: transparent;
+  color: var(--color-content3);
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  cursor: pointer;
+  height: 3.5rem;
+  display: flex;
+  width: 3.5rem;
+  border: none;
+}
+
+.admin-record-button:hover {
+  color: black;
+}
+
+.admin-record-icon {
+  font-size: 2.3rem;
+}
+
+.admin-record-card-container {
+  display: flex;
+  height: 100%;
+  width: 100%;
+}
+
+.admin-record-image {
+  justify-content: flex-start;
+  align-self: baseline;
+  border-radius: 15px;
+  padding-right: 1rem;
+  object-fit: contain;
+  margin-top: 1rem;
+  display: flex;
+  width: 100%;
+}
+
+.admin-record-inputs {
+  width: 100%;
+  padding: 0 0.5rem;
+}
+.admin-record-input-container {
+  flex-direction: column;
+  display: flex;
+}
+
+.admin-record-input-container label {
+  font-family: var(--color-content1);
+  text-decoration: underline;
+  text-transform: uppercase;
+  margin: 0.5rem 0;
+  font-size: 0.9rem;
+}
+
+.admin-record-input-container input {
+  font-family: var(--color-content1);
+  background-color: transparent;
+  font-size: 1.2rem;
+  border: none;
+}
+
+.admin-record-input-container textarea {
+  scrollbar-color: var(--background-light-2) white;
+  font-family: var(--color-content1);
+  scrollbar-width: thin;
+  font-size: 1.2rem;
+  height: 10vh;
+  border: none;
+}
+
+.admin-record-input-container textarea:focus,
+input:focus {
+  outline: none;
+}
+
+.tab-panel-add-record {
+  margin: 5rem 0;
+  border: none;
+  height: 40vh;
+  width: 42vw;
+}
+
+.tab-panel-add-record:hover {
+  filter: brightness(0.9);
+  cursor: pointer;
+}
+
+.tab-panel-add-record-icon {
+  color: var(--color-content3);
+  font-size: 8rem;
+}

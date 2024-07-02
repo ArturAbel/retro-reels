@@ -16,7 +16,7 @@ export const Login = () => {
     try {
       await loginWithEmailPassword(email, password);
       if (user) {
-        navigate("/admin");
+        navigate("/admin/admin-records");
       }
     } catch (error) {
       console.error(error.message);
@@ -29,8 +29,8 @@ export const Login = () => {
         <p>Loading...</p>
       ) : (
         <>
-          <Link to={"/nav"} className="back-button-link">
-            <button className="button">back</button>
+          <Link to={"/nav"} className="login-back-button-link">
+            <button className="button login-back-button">back</button>
           </Link>
           <form onSubmit={handleLogin} className="login-form">
             <h4 className="login-title">admin log-in</h4>
