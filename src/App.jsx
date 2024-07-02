@@ -2,6 +2,8 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import { PrivateRoute } from "./components/PrivateRoute/PrivateRoute";
 import { AdminRecords } from "./pages/AdminRecords/AdminRecords";
 import { BookReview } from "./components/BookReview/BookReview";
+import { AdminMovies } from "./pages/AdminMovies/AdminMovies";
+import { AdminBooks } from "./pages/AdminBooks/AdminBooks";
 import { Navigation } from "./pages/Navigation/Navigation";
 import { AuthProvider } from "./context/AuthContext";
 import { DataProvider } from "./context/DataContext";
@@ -57,11 +59,11 @@ const router = createBrowserRouter([
       },
       {
         path: "admin-books",
-        element: "",
+        element: <AdminBooks />,
       },
       {
         path: "admin-movies",
-        element: "",
+        element: <AdminMovies />,
       },
     ],
   },
