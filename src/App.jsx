@@ -56,7 +56,7 @@ function App() {
   return (
     <AuthProvider>
       <DataProvider>
-        <RouterProvider router={router} />;
+        <RouterProvider router={router} />
       </DataProvider>
     </AuthProvider>
   );

@@ -1,9 +1,9 @@
 import { MoviePoster } from "../../components/MoviePoster/MoviePoster";
+import { useDataContext } from "../../context/DataContext";
 import { Navbar } from "../../components/Navbar/Navbar";
 import { useState } from "react";
 
 import "./Movies.css";
-import { useDataContext } from "../../context/DataContext";
 
 export const Movies = () => {
   const [movieDetails, setMovieDetails] = useState(null);

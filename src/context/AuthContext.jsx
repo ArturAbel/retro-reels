@@ -10,9 +10,23 @@ export const AuthProvider = ({ children }) => {
   const [loading, setLoading] = useState(false);
   const [user, setUser] = useState({});
 
-  const loginWithEmailPassword = (email, password) => {
-    setLoading(true);
-    return signInWithEmailAndPassword(auth, email, password);
+  const loginWithEmailPassword = async (email, password) => {
+    try {
+      setLoading(true);
+      const userCredential = await signInWithEmailAndPassword(
+        auth,
+        email,
+        password
+      );
+      const user = userCredential.user;
+      setUser(user);
+    } catch (error) {
+      const errorCode = error.code;
+      const errorMessage = error.message;
+      console.error(errorMessage, errorCode);
+    } finally {
+      setLoading(false);
+    }
   };
 
   const loginWithGoogle = async () => {
@@ -32,14 +46,15 @@ export const AuthProvider = ({ children }) => {
       setUser(currentUser);
       setLoading(false);
     });
-
     return () => {
       unsubscribe();
     };
   }, []);
 
   return (
-    <AuthContext.Provider value={{ user, loading }}>
+    <AuthContext.Provider
+      value={{ user, loading, setLoading, loginWithEmailPassword, logOut }}
+    >
       {children}
     </AuthContext.Provider>
   );
