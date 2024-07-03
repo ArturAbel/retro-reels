@@ -1,6 +1,7 @@
 import { AdminMovieCard } from "../../components/AdminMovieCard/AdminMovieCard";
 import { useDataContext } from "../../context/DataContext";
 import { VscAdd } from "react-icons/vsc";
+import { Link } from "react-router-dom";
 
 import "./AdminMovies.css";
 
@@ -10,11 +11,13 @@ export const AdminMovies = () => {
   return (
     <section className="section-admin-movies">
       {movies.map((movie) => {
-        return <AdminMovieCard key={movie.id} {...movie} />;
+        return <AdminMovieCard key={movie.id} movie={movie} />;
       })}
-      <button className="tab-panel-add-movie">
-        <VscAdd className="tab-panel-add-movie-icon" />
-      </button>
+      <Link to={"add-movie"}>
+        <button className="tab-panel-add-movie">
+          <VscAdd className="tab-panel-add-movie-icon" />
+        </button>
+      </Link>
     </section>
   );
 };

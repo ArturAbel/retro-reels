@@ -1,10 +1,23 @@
 import "./InputGeneric.css";
 
-export const InputGeneric = ({ label, type, name, value, disable }) => {
+export const InputGeneric = ({
+  handleInputChange,
+  disabled,
+  value,
+  label,
+  type,
+  name,
+}) => {
   return (
     <div className="admin-generic-input-container">
       <label htmlFor={name}>{label}</label>
-      <input name={name} type={type} value={value} />
+      <input
+        onChange={handleInputChange}
+        disabled={disabled}
+        value={value}
+        name={name}
+        type={type}
+      />
     </div>
   );
 };
