@@ -23,3 +23,8 @@
 .button:focus {
   outline: none;
 }
+
+/* Admin Cards Update Icon Highlight */
+.confirm-update {
+  color: var(--background-secondary-5);
+}

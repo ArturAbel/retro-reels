@@ -78,11 +78,16 @@
 
 .admin-record-input-container textarea {
   scrollbar-color: var(--background-light-2) white;
+  background-color: var(--background-main-1);
   font-family: var(--color-content1);
   scrollbar-width: thin;
   font-size: 1.2rem;
   height: 10vh;
   border: none;
+}
+
+.admin-record-input-container textarea:disabled {
+  background-color: transparent;
 }
 
 .admin-record-input-container textarea:focus,
@@ -93,7 +98,7 @@ input:focus {
 .tab-panel-add-record {
   margin: 5rem 0;
   border: none;
-  height: 40vh;
+  height: 55vh;
   width: 42vw;
 }
 
@@ -106,3 +111,4 @@ input:focus {
   color: var(--color-content3);
   font-size: 8rem;
 }
+

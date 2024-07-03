@@ -1,59 +1,114 @@
+import { InputGeneric } from "../InputGeneric/InputGeneric";
+import { useDataContext } from "../../context/DataContext";
+import { useFormHook } from "../../hooks/useFormHook";
 import { MdSystemUpdateAlt } from "react-icons/md";
 import { TiDeleteOutline } from "react-icons/ti";
+import { useEffect, useState } from "react";
 
 import "./AdminRecordCard.css";
 
-export const AdminRecordCard = ({
-  description,
-  albumName,
-  singer,
-  image,
-  song,
-  year,
-  link,
-}) => {
+export const AdminRecordCard = ({ record }) => {
+  const { handleRemoveRecord, handleUpdateRecord } = useDataContext();
+  const { input, setInput, handleInputChange } = useFormHook();
+  const [disableInputs, setDisableInputs] = useState(true);
+
+  useEffect(() => {
+    setInput(record);
+  }, [record]);
+
+  const handleRemoveRecordButton = () => {
+    handleRemoveRecord(record);
+  };
+
+  const handleUpdateButton = () => {
+    setDisableInputs((previousState) => !previousState);
+    if (!disableInputs) {
+      handleUpdateRecord(input);
+    }
+  };
+
   return (
     <div className="admin-record-card">
       <div className="admin-record-buttons">
         <button className="admin-record-button" title="Update">
-          <MdSystemUpdateAlt className="admin-record-icon" />
+          <MdSystemUpdateAlt
+            className={`admin-record-icon ${
+              !disableInputs ? "confirm-update" : ""
+            } `}
+            onClick={handleUpdateButton}
+          />
         </button>
         <button className="admin-record-button" title="Remove">
-          <TiDeleteOutline className="admin-record-icon" />
+          <TiDeleteOutline
+            onClick={handleRemoveRecordButton}
+            className="admin-record-icon"
+          />
         </button>
       </div>
       <div className="admin-record-card-container">
         <div className="admin-record-image">
-          <img className="admin-record-image" src={image} alt="image" />
+          <img className="admin-record-image" src={input.image} alt="image" />
         </div>
         <form className="admin-record-inputs">
-          <div className="admin-record-input-container">
-            <label htmlFor="singer">singer</label>
-            <input type="text" value={singer} />
-          </div>
-          <div className="admin-record-input-container">
-            <label htmlFor="song">song name</label>
-            <input type="text" value={song} />
-          </div>
-          <div className="admin-record-input-container">
-            <label htmlFor="year">year</label>
-            <input type="number" min={1930} max={2000} value={year} />
-          </div>
-          <div className="admin-record-input-container">
-            <label htmlFor="album">album</label>
-            <input type="text" value={albumName} />
-          </div>
-          <div className="admin-record-input-container">
-            <label htmlFor="image">image url</label>
-            <input type="url" value={image} />
-          </div>
-          <div className="admin-record-input-container">
-            <label htmlFor="link">link</label>
-            <input type="url" value={link} />
-          </div>
+          <InputGeneric
+            handleInputChange={handleInputChange}
+            disabled={disableInputs}
+            value={input.singer}
+            label={"singer"}
+            name={"singer"}
+            type={"text"}
+          />
+          <InputGeneric
+            handleInputChange={handleInputChange}
+            disabled={disableInputs}
+            value={input.song}
+            label={"song name"}
+            name={"song"}
+            type={"text"}
+          />
+          <InputGeneric
+            handleInputChange={handleInputChange}
+            disabled={disableInputs}
+            value={input.year}
+            type={"number"}
+            label={"year"}
+            name={"year"}
+            min={1930}
+            max={2000}
+          />
+          <InputGeneric
+            handleInputChange={handleInputChange}
+            disabled={disableInputs}
+            value={input.albumName}
+            name={"albumName"}
+            label={"album"}
+            type={"text"}
+          />
+          <InputGeneric
+            handleInputChange={handleInputChange}
+            disabled={disableInputs}
+            value={input.image}
+            label={"image url"}
+            name={"image"}
+            type={"url"}
+          />
+          <InputGeneric
+            disabled={disableInputs}
+            value={input.link}
+            label={"link"}
+            name={"link"}
+            type={"url"}
+          />
           <div className="admin-record-input-container">
             <label htmlFor="description">description</label>
-            <textarea type="text" value={description} disabled={true} />
+            <textarea
+              onChange={handleInputChange}
+              value={input.description}
+              disabled={disableInputs}
+              name="description"
+              maxLength={1000}
+              type="text"
+            />
           </div>
         </form>
       </div>

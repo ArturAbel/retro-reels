@@ -1,0 +1,39 @@
+.section-add-book {
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  display: flex;
+  height: 90vh;
+  width: 100%;
+}
+
+.add-book-title {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 2.5rem;
+}
+
+.add-book-form {
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  display: flex;
+  height: 40vh;
+  gap: 3rem;
+}
+
+.add-book-form-div {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.add-book-button {
+  height: 3.5rem;
+  width: 8rem;
+}
+.add-book-column {
+  flex-direction: column;
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}

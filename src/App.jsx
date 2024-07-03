@@ -5,8 +5,11 @@ import { BookReview } from "./components/BookReview/BookReview";
 import { AdminMovies } from "./pages/AdminMovies/AdminMovies";
 import { AdminBooks } from "./pages/AdminBooks/AdminBooks";
 import { Navigation } from "./pages/Navigation/Navigation";
+import { AddRecord } from "./pages/AddRecord/AddRecord";
+import { AddMovie } from "./pages/AddMovie/AddMovie";
 import { AuthProvider } from "./context/AuthContext";
 import { DataProvider } from "./context/DataContext";
+import { AddBook } from "./pages/AddBook/AddBook";
 import { Records } from "./pages/Records/Records";
 import { Movies } from "./pages/Movies/Movies";
 import { Books } from "./pages/Books/Books";
@@ -58,12 +61,24 @@ const router = createBrowserRouter([
         element: <AdminRecords />,
       },
       {
+        path: "admin-records/add-record",
+        element: <AddRecord />,
+      },
+      {
         path: "admin-books",
         element: <AdminBooks />,
       },
       {
+        path: "admin-books/add-book",
+        element: <AddBook />,
+      },
+      {
         path: "admin-movies",
         element: <AdminMovies />,
+      },
+      {
+        path: "admin-movies/add-movie",
+        element: <AddMovie />,
       },
     ],
   },

@@ -1,19 +1,24 @@
 .admin-generic-input-container {
-   flex-direction: column;
-   display: flex;
- }
- 
- .admin-generic-input-container label {
-   font-family: var(--color-content1);
-   text-decoration: underline;
-   text-transform: uppercase;
-   margin: 0.5rem 0;
-   font-size: 0.9rem;
- }
- 
- .admin-generic-input-container input {
-   font-family: var(--color-content1);
-   background-color: transparent;
-   font-size: 1.2rem;
-   border: none;
- }
+  flex-direction: column;
+  display: flex;
+}
+
+.admin-generic-input-container label {
+  font-family: var(--color-content1);
+  text-decoration: underline;
+  text-transform: uppercase;
+  margin: 0.5rem 0;
+  font-size: 0.9rem;
+}
+
+.admin-generic-input-container input {
+  background-color: var(--background-main-1);
+  font-family: var(--color-content1);
+  font-size: 1.2rem;
+  border: none;
+}
+
+.admin-generic-input-container input:disabled {
+  background-color: transparent;
+}
+
