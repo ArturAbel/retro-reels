@@ -3,3 +3,16 @@
   max-height: 100%;
   width: 100vw;
 }
+
+/* Tablet Responsiveness */
+@media screen and (min-width: 420px) and (max-width: 800px) {
+  .section-home {
+    overflow: hidden;
+  }
+}
+/* Phone Responsiveness*/
+@media screen and (max-width: 420px) {
+  .section-home {
+    overflow: hidden;
+  }
+}

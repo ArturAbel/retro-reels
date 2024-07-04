@@ -25,4 +25,19 @@
 
 .hero-menu-button {
   color: inherit;
+  z-index: 1;
+}
+
+/* Tablet Responsiveness */
+@media screen and (min-width: 420px) and (max-width: 800px) {
+  .hero-title {
+    margin-right: 3rem;
+    font-size: 2rem;
+  }
+}
+/* Phone Responsiveness*/
+@media screen and (max-width: 420px) {
+  .hero-title {
+    font-size: 3rem;
+  }
 }

@@ -9,6 +9,7 @@ import { AddRecord } from "./pages/AddRecord/AddRecord";
 import { AddMovie } from "./pages/AddMovie/AddMovie";
 import { AuthProvider } from "./context/AuthContext";
 import { DataProvider } from "./context/DataContext";
+import { NotFound } from "./pages/NotFound/NotFound";
 import { AddBook } from "./pages/AddBook/AddBook";
 import { Records } from "./pages/Records/Records";
 import { Movies } from "./pages/Movies/Movies";
@@ -81,6 +82,10 @@ const router = createBrowserRouter([
         element: <AddMovie />,
       },
     ],
+  },
+  {
+    path: "*",
+    element: <NotFound />,
   },
 ]);
 

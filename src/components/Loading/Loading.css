@@ -1,0 +1,51 @@
+.section-loading {
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  max-height: 100vh;
+  min-height: 90vh;
+  display: flex;
+  width: 100vw;
+}
+
+.loading-title {
+  font-family: var(--font-retro1);
+  color: var(--background-dark-2);
+  font-size: 5rem;
+}
+
+.loading-image-container {
+  justify-content: center;
+  display: flex;
+  animation: shaking 2s infinite linear;
+}
+
+.loading-image {
+  width: 70%;
+  animation: away 6s infinite linear;
+}
+
+@keyframes shaking {
+  25% {
+    transform: rotate(-5deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  75% {
+    transform: rotate(5deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes away {
+  0% {
+    transform: translateY(0rem);
+  }
+  100% {
+    transform: translateY(4rem) scale(0.5);
+  }
+}
+

@@ -1,9 +1,9 @@
 .section-tv {
   justify-content: center;
   align-items: center;
+  min-height: 100vh;
   overflow: hidden;
   display: flex;
-  min-height: 100vh;
   width: 100vw;
 }
 
@@ -12,7 +12,7 @@
   flex-direction: column;
   align-items: center;
   display: flex;
-  height: 100vhh;
+  height: 100vh;
   width: 60vw;
 }
 
@@ -26,8 +26,8 @@
 
 .tv-image {
   position: relative;
-  height: 100%;
-  width: 100%;
+  height: 55vh;
+  width: 40vw;
   z-index: 1;
 }
 
@@ -114,4 +114,146 @@
   width: 13rem;
   left: 17vw;
   top: 50%;
+}
+
+/* Tablet Responsiveness */
+@media screen and (min-width: 420px) and (max-width: 800px) {
+  .tv-image-container {
+    width: 60vw;
+  }
+
+  .tv-image {
+    position: relative;
+    height: 50vw;
+    width: 60vw;
+  }
+
+  .tv-component-title {
+    font-size: 3rem;
+  }
+
+  .tv-books-container {
+    flex-direction: column;
+    transition: 0.5s;
+    display: flex;
+  }
+
+  .tv-books-image1 {
+    height: 7vh;
+    width: 25vw;
+  }
+
+  .tv-books-image2 {
+    height: 7vh;
+    width: 25vw;
+  }
+
+  .tv-books-image3 {
+    height: 10vh;
+    width: 25vw;
+  }
+
+  .tv-component-title-container {
+    align-items: flex-start;
+  }
+
+  .arrow-movies {
+    transform: rotate(60deg);
+    width: 10rem;
+    left: 7vw;
+    top: 15%;
+  }
+
+  .arrow-books {
+    transform: rotate(-70deg);
+    width: 7rem;
+    left: -11vw;
+    top: 3vh;
+  }
+}
+
+/* Phone Responsiveness*/
+@media screen and (max-width: 420px) {
+  .section-tv {
+    flex-direction: column-reverse;
+    height: 100%;
+  }
+
+  .tv-component-title-container {
+    height: 10vh;
+    width: 100vw;
+  }
+
+  .tv-component-container {
+    justify-content: center;
+    height: 70vh;
+    width: 100vw;
+  }
+
+  .tv-image-container {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    height: 34vh;
+    width: 100vw;
+  }
+  .tv-image {
+    position: relative;
+    height: 35vh;
+    width: 80vw;
+    z-index: 1;
+  }
+
+  .tv-screen {
+    z-index: 0;
+    left: 5rem;
+    top: 3rem;
+  }
+  .tv-screen-gif {
+    width: 60vw;
+    height: 25vh;
+  }
+
+  .tv-books-container {
+    flex-direction: column;
+    transition: 0.5s;
+    display: flex;
+  }
+
+  .tv-books-image1 {
+    height: 5vh;
+    width: 50vw;
+  }
+
+  .tv-books-image2 {
+    height: 5vh;
+    width: 50vw;
+  }
+
+  .tv-books-image3 {
+    height: 8.5vh;
+    width: 50vw;
+  }
+
+  .tv-component-title {
+    font-size: 2rem;
+  }
+
+  .title-books {
+    text-align: center;
+  }
+
+  .arrow-movies {
+    transform: rotate(270deg);
+    width: 10rem;
+    left: 30vw;
+    top: -5rem;
+  }
+
+  .arrow-books {
+    transform: rotate(-110deg);
+    width: 7rem;
+    left: 40vw;
+    top: 10vh;
+  }
 }

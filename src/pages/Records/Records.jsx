@@ -1,4 +1,6 @@
+import { guitarImage, sticksImage } from "../../utilities/variables";
 import { useDataContext } from "../../context/DataContext";
+import { Loading } from "../../components/Loading/Loading";
 import { Navbar } from "../../components/Navbar/Navbar";
 import { Record } from "../../components/Record/Record";
 import { RiCloseLargeLine } from "react-icons/ri";
@@ -9,7 +11,7 @@ import "./Records.css";
 export const Records = () => {
   const [youtubeDisplay, setYoutubeDisplay] = useState(false);
   const [video, setVideo] = useState("");
-  const { records } = useDataContext();
+  const { records, loading } = useDataContext();
 
   const handleCloseYoutubeButton = () => {
     setYoutubeDisplay(false);
@@ -23,26 +25,42 @@ export const Records = () => {
         color={"records-title-color"}
       />
       <h1 className="records-section-title">records</h1>
-      <div className="records-grid">
-        {records.map((record) => {
-          return (
-            <Record
-              setYoutubeDisplay={setYoutubeDisplay}
-              setVideo={setVideo}
-              record={record}
-              key={record.id}
+      {loading ? (
+        <Loading />
+      ) : (
+        <>
+          <div className="records-grid">
+            <img
+              className="records-guitar-image"
+              src={guitarImage}
+              alt="guitar"
             />
-          );
-        })}
-      </div>
-      {youtubeDisplay && (
-        <div className="youtube-video-container">
-          <RiCloseLargeLine
-            onClick={handleCloseYoutubeButton}
-            className="youtube-close-icon"
-          />
-          <iframe src={video} width={400} height={300}></iframe>
-        </div>
+            {records.map((record) => {
+              return (
+                <Record
+                  setYoutubeDisplay={setYoutubeDisplay}
+                  setVideo={setVideo}
+                  record={record}
+                  key={record.id}
+                />
+              );
+            })}
+            <img
+              className="records-drumsticks-image"
+              src={sticksImage}
+              alt="drumsticks"
+            />
+          </div>
+          {youtubeDisplay && (
+            <div className="youtube-video-container">
+              <RiCloseLargeLine
+                onClick={handleCloseYoutubeButton}
+                className="youtube-close-icon"
+              />
+              <iframe src={video} width={400} height={300}></iframe>
+            </div>
+          )}
+        </>
       )}
     </section>
   );

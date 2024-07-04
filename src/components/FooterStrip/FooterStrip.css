@@ -1,4 +1,4 @@
-.separator {
+.footer-strip {
   justify-content: flex-start;
   align-items: flex-end;
   position: relative;
@@ -7,4 +7,18 @@
   height: 40vh;
   width: 100vw;
   gap: 5rem;
+}
+
+/* Tablet Responsiveness */
+@media screen and (min-width: 420px) and (max-width: 800px) {
+  .footer-strip {
+    height: 20vh;
+  }
+}
+
+/* Phone Responsiveness*/
+@media screen and (max-width: 420px) {
+  .footer-strip {
+    height: 20vh;
+  }
 }

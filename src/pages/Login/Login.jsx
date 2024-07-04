@@ -1,32 +1,48 @@
+import { Loading } from "../../components/Loading/Loading";
 import { useAuthContext } from "../../context/AuthContext";
 import { useNavigate } from "react-router-dom";
+import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import { useState } from "react";
 
 import "./Login.css";
 
 export const Login = () => {
-  const { user, loading, loginWithEmailPassword } = useAuthContext();
+  const { user, loading, error, setError, loginWithEmailPassword } =
+    useAuthContext();
   const [password, setPassword] = useState("");
   const [email, setEmail] = useState("");
   const navigate = useNavigate();
+
 
   const handleLogin = async (event) => {
     event.preventDefault();
     try {
       await loginWithEmailPassword(email, password);
-      if (user) {
-        navigate("/admin/admin-records");
-      }
     } catch (error) {
-      console.error(error.message);
+      console.error("Login error message:", error);
     }
   };
+
+
+  useEffect(() => {
+    if (user) {
+      navigate("/admin/admin-records");
+    }
+  }, [user, navigate]);
+
+
+
+  useEffect(() => {
+    if (error) {
+      setTimeout(() => setError(null), 2000);
+    }
+  }, [error, setError]);
+
 
   return (
     <section className="section-login">
       {loading ? (
-        <p>Loading...</p>
+        <Loading />
       ) : (
         <>
           <Link to={"/nav"} className="login-back-button-link">
@@ -55,6 +71,7 @@ export const Login = () => {
             <button type="submit" className="button">
               enter
             </button>
+            {error && <p className="login-error-message">{error}</p>}
           </form>
         </>
       )}

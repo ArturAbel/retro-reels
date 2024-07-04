@@ -18,6 +18,9 @@ export const Home = () => {
   const tvSectionRef = useRef(null);
 
   useGSAP(() => {
+    const vh = (coef) => window.innerHeight * (coef / 100);
+    const vw = (coef) => window.innerWidth * (coef / 100);
+
     gsap.to(".col-1", {
       x: -300,
       ease: "none",
@@ -45,9 +48,9 @@ export const Home = () => {
       rotation: 500,
       ease: "none",
       scrollTrigger: {
-        trigger: homeSectionRef.current,
-        start: "top center",
-        end: "+=1800",
+        trigger: homeGalleryRef.current,
+        start: vh(100) + " top",
+        end: vh(10) + " top",
         scrub: 2,
       },
     });
@@ -57,8 +60,8 @@ export const Home = () => {
       rotate: 30,
       scrollTrigger: {
         trigger: musicSectionRef.current,
-        start: "top center",
-        end: "+=800",
+        start: "top" + "bottom",
+        end: vh(0) + " top",
         scrub: 2,
       },
     });
@@ -74,7 +77,7 @@ export const Home = () => {
         scrub: 2,
       },
     });
-    gsap.from(".separator", {
+    gsap.from(".footer-strip", {
       x: -440,
       duration: 7,
       repeat: -1,

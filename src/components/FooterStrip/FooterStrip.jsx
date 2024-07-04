@@ -5,7 +5,7 @@ import "./FooterStrip.css";
 
 export const FooterStrip = () => {
   return (
-    <div className="separator">
+    <div className="footer-strip">
       
       {footerWords.map((word, index) => {
         return <FooterStripWord key={index} word={word} />;

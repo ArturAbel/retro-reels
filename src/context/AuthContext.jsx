@@ -8,11 +8,17 @@ const AuthContext = createContext();
 
 export const AuthProvider = ({ children }) => {
   const [loading, setLoading] = useState(false);
+  const [error, setError] = useState(false);
   const [user, setUser] = useState({});
+
+  const refinedFirebaseAuthErrorMessage = (error) => {
+    return error.split("auth/")[1].replace(/-/g, " ");
+  };
 
   const loginWithEmailPassword = async (email, password) => {
     try {
       setLoading(true);
+      setError(null);
       const userCredential = await signInWithEmailAndPassword(
         auth,
         email,
@@ -22,8 +28,8 @@ export const AuthProvider = ({ children }) => {
       setUser(user);
     } catch (error) {
       const errorCode = error.code;
-      const errorMessage = error.message;
-      console.error(errorMessage, errorCode);
+      const refinedError = refinedFirebaseAuthErrorMessage(errorCode);
+      setError(refinedError);
     } finally {
       setLoading(false);
     }
@@ -53,7 +59,15 @@ export const AuthProvider = ({ children }) => {
 
   return (
     <AuthContext.Provider
-      value={{ user, loading, setLoading, loginWithEmailPassword, logOut }}
+      value={{
+        loginWithEmailPassword,
+        setLoading,
+        setError,
+        loading,
+        logOut,
+        error,
+        user,
+      }}
     >
       {children}
     </AuthContext.Provider>

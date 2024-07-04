@@ -21,24 +21,34 @@ export const Footer = () => {
         </div>
         <div className="footer-contacts-container">
           <div className="footer-social-links">
-            <a className="footer-social-link">
+            <a href="#" className="footer-social-link">
               <FaTwitter />
             </a>
-            <a className="footer-social-link">
+            <a href="#" className="footer-social-link">
               <FaInstagram />
             </a>
-            <a className="footer-social-link">
+            <a href="#" className="footer-social-link">
               <FaFacebookF />
             </a>
-            <a className="footer-social-link">
+            <a href="#" className="footer-social-link">
               <FaTiktok />
             </a>
           </div>
           <div className="footer-empty"></div>
           <div className="footer-rights">
-            <p>
-              All rights reserved.
-              <span className="footer-rights-text"> © retro reels 2024</span>
+            <p className="footer-rights-text">
+              &quot;In the reels of time, we delve so deep, <br />
+              Where stories old and legends sleep.
+              <br />
+              From classic films to books well-read,
+              <br />A treasure trove for heart and head.&quot;
+            </p>
+            <p className="footer-rights-text">created with love &#10084;.</p>
+            <p className="footer-rights-text">
+              all rights reserved-
+              <span className="footer-rights-uppercase">
+                retro reels 2024 &copy;
+              </span>
             </p>
           </div>
         </div>
