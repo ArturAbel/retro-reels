@@ -1,5 +1,6 @@
 import { useDataContext } from "../../context/DataContext";
 import { BookTab } from "../../components/BookTab/BookTab";
+import { Loading } from "../../components/Loading/Loading";
 import { Navbar } from "../../components/Navbar/Navbar";
 import { Link } from "react-router-dom";
 import { useGSAP } from "@gsap/react";
@@ -8,8 +9,7 @@ import gsap from "gsap";
 import "./Books.css";
 
 export const Books = () => {
-  const { books } = useDataContext();
-
+  const { books, loading } = useDataContext();
   gsap.registerPlugin(useGSAP);
 
   useGSAP(() => {
@@ -50,15 +50,24 @@ export const Books = () => {
         color={"books-title-color"}
       />
       <h1 className="books-section-title">books</h1>
-      <div className="books-container">
-        {books.map((book) => {
-          return (
-            <Link className="books-link" key={book.id} to={book.id} params={{}}>
-              <BookTab book={book} />
-            </Link>
-          );
-        })}
-      </div>
+      {loading ? (
+        <Loading />
+      ) : (
+        <div className="books-container">
+          {books.map((book) => {
+            return (
+              <Link
+                className="books-link"
+                key={book.id}
+                to={book.id}
+                params={{}}
+              >
+                <BookTab book={book} />
+              </Link>
+            );
+          })}
+        </div>
+      )}
     </section>
   );
 };

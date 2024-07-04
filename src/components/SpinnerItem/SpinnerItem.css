@@ -44,3 +44,64 @@
   top: 1vh;
 }
 
+/* Tablet Responsiveness */
+@media screen and (min-width: 420px) and (max-width: 800px) {
+  .hero-spinner {
+    height: 15rem;
+    width: 15rem;
+  }
+
+  .spinner-0 {
+    left: 10%;
+    top: 20%;
+  }
+
+  .spinner-1 {
+    bottom: 0;
+    left: 15%;
+  }
+
+  .spinner-2 {
+    right: 10%;
+    bottom: 5%;
+  }
+
+  .spinner-4 {
+    left: -5vw;
+    top: 40vh;
+  }
+}
+
+/* Phone Responsiveness*/
+@media screen and (max-width: 420px) {
+  .hero-spinner {
+    height: 15rem;
+    width: 15rem;
+  }
+
+  .spinner-0 {
+    left: 10%;
+    top: 20%;
+  }
+
+  .spinner-1 {
+    bottom: 10%;
+    left: 0;
+  }
+
+  .spinner-2 {
+    right: 0;
+    bottom: 5%;
+  }
+
+  .spinner-3 {
+    bottom: 10vh;
+    right: 0;
+  }
+
+  .spinner-4 {
+    filter: none;
+    left: 50vw;
+    top: 20vh;
+  }
+}

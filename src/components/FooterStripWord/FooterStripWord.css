@@ -1,15 +1,33 @@
-.separator-container {
-   text-transform: uppercase;
-   letter-spacing: -1px;
-   white-space: nowrap;
-   align-items: center;
-   font-size: 4rem;
-   display: flex;
-   gap: 1rem;
+.foot-strip-container {
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  white-space: nowrap;
+  align-items: center;
+  display: flex;
+  gap: 1rem;
+}
 
- }
- 
- .separator-word {
-   padding-top: 0.5rem;
-   
- }
+.foot-strip-word {
+  padding-top: 0.5rem;
+  font-size: 4rem;
+}
+
+/* Tablet Responsiveness */
+@media screen and (min-width: 420px) and (max-width: 800px) {
+  .foot-strip-word {
+    font-size: 4rem;
+  }
+  .foot-strip-container-icon {
+    font-size: 4rem;
+  }
+}
+
+/* Phone Responsiveness*/
+@media screen and (max-width: 420px) {
+  .foot-strip-word {
+    font-size: 3rem;
+  }
+  .foot-strip-container-icon {
+    font-size: 3rem;
+  }
+}

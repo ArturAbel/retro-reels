@@ -63,3 +63,13 @@
   align-self: center;
   display: flex;
 }
+
+@media screen and (min-width: 420px) and (max-width: 800px) {
+  .book-container {
+    padding-left: 1rem;
+  }
+  .book-tab-content {
+    font-size: 1.5rem;
+    gap: 1rem;
+  }
+}

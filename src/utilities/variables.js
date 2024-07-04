@@ -55,3 +55,10 @@ export const footerWords = [
   "retro reels",
   "retro reels",
 ];
+
+// Loader Component
+export const loadingImage = "../../assets/img/loading/loading.png";
+
+// Records Page
+export const guitarImage = "../../assets/img/records/guitar.png";
+export const sticksImage = "../../assets/img/records/drum.png";

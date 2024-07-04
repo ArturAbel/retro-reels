@@ -4,3 +4,27 @@
   width: 28rem;
   padding: 0.2rem 0;
 }
+
+/* Tablet Responsiveness */
+@media screen and (min-width: 420px) and (max-width: 800px) {
+  .hero-gallery-img {
+    height: 15rem;
+    width: 25rem;
+  }
+}
+
+/* Phone Responsiveness*/
+@media screen and (max-width: 420px) {
+  .hero-gallery-img {
+    height: 15rem;
+    width: 25rem;
+  }
+}
+
+
+
+
+
+
+
+

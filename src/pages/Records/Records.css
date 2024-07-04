@@ -21,6 +21,24 @@
   top: 0;
 }
 
+.records-guitar-image {
+  position: fixed;
+  height: 100vh;
+  width: auto;
+  z-index: 0;
+  left: 0;
+  top: 0;
+}
+
+.records-drumsticks-image {
+  position: fixed;
+  height: 70vh;
+  width: auto;
+  z-index: 0;
+  right: 0;
+  top: 0;
+}
+
 .records-button-background {
   background-color: var(--background-secondary-4);
 }
@@ -44,3 +62,25 @@
   margin-top: 10rem;
 }
 
+@media screen and (min-width: 420px) and (max-width: 800px) {
+  .records-section-title {
+    padding-top: 0.8rem;
+    font-size: 4.8rem;
+  }
+
+  .records-grid {
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    width: 90vw;
+  }
+
+  .records-grid-card:nth-child(3n + 1),
+  .records-grid-card:nth-child(3n) {
+    margin-top: 0;
+  }
+
+  .records-drumsticks-image,
+  .records-guitar-image {
+    display: none;
+  }
+}

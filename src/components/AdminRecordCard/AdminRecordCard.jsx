@@ -93,6 +93,7 @@ export const AdminRecordCard = ({ record }) => {
             type={"url"}
           />
           <InputGeneric
+            handleInputChange={handleInputChange}
             disabled={disableInputs}
             value={input.link}
             label={"link"}
