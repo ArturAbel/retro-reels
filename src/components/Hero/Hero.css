@@ -31,6 +31,16 @@
   color: var(--background-main-3);
 }
 
+/* Desktop Responsiveness */
+@media screen and (width: 1920px) and (height: 1200px), 
+       (min-width: 1280px) and (min-height: 631px) {
+        .hero-image {
+          height: 70vh;
+          width: 30vw;
+        }
+}
+
+
 /* Tablet Responsiveness */
 @media screen and (min-width: 430px) and (max-width: 800px) {
   .hero-container {

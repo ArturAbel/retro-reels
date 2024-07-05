@@ -104,6 +104,15 @@
   opacity: 1;
 }
 
+/* Desktop Responsiveness */
+@media screen and (width: 1920px) and (height: 1200px),
+  (min-width: 1280px) and (min-height: 631px) {
+  .navigation-top {
+    padding: 0rem 5rem;
+    width: 100%;
+  }
+}
+
 /* Tablet Responsiveness*/
 @media screen and (min-width: 430px) and (max-width: 800px) {
   .navigation-top {

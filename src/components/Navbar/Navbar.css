@@ -25,15 +25,23 @@
   z-index: 1;
 }
 
+/* Desktop Responsiveness */
+@media screen and (width: 1920px) and (height: 1200px),
+  (min-width: 1280px) and (min-height: 631px) {
+  .nav-menu-button {
+    margin-left: 4rem;
+  }
+}
+
 /* Tablet Responsiveness */
-@media screen and (min-width: 420px) and (max-width: 800px) {
+@media screen and (min-width: 430px) and (max-width: 800px) {
   .nav-title {
     margin-right: 3rem;
     font-size: 2rem;
   }
 }
 /* Phone Responsiveness*/
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 430px) {
   .nav-title {
     font-size: 3rem;
   }

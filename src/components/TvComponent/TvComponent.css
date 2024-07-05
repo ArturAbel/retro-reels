@@ -116,6 +116,24 @@
   top: 50%;
 }
 
+/* Desktop Responsiveness */
+@media screen and (width: 1920px) and (height: 1200px),
+  (min-width: 1280px) and (min-height: 631px) {
+  .tv-screen {
+    z-index: 0;
+    left: 5rem;
+    top: 5rem;
+  }
+  .tv-screen-gif {
+    width: 28vw;
+    height: 40vh;
+  }
+
+  .tv-component-title {
+    font-size: 5rem;
+  }
+}
+
 /* Tablet Responsiveness */
 @media screen and (min-width: 430px) and (max-width: 800px) {
   .tv-image-container {

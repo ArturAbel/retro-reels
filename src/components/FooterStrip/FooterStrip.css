@@ -9,15 +9,23 @@
   gap: 5rem;
 }
 
+/* Desktop Responsiveness */
+@media screen and (width: 1920px) and (height: 1200px),
+  (min-width: 1280px) and (min-height: 631px) {
+  .footer-strip {
+    height: 30vh;
+  }
+}
+
 /* Tablet Responsiveness */
-@media screen and (min-width: 420px) and (max-width: 800px) {
+@media screen and (min-width: 430px) and (max-width: 800px) {
   .footer-strip {
     height: 20vh;
   }
 }
 
 /* Phone Responsiveness*/
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 430px) {
   .footer-strip {
     height: 20vh;
   }
