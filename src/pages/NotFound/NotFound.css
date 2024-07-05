@@ -37,6 +37,31 @@
   font-size: 4.5rem;
   width: 40%;
 }
+
 .not-found-image {
   justify-self: flex-start;
+}
+
+/* Phone Responsiveness*/
+@media screen and (max-width: 430px) {
+  .section-not-found {
+    height: 95vh;
+  }
+
+  .not-found-title {
+    text-align: center;
+    margin-top: 5rem;
+    font-size: 3rem;
+    width: 90%;
+  }
+
+  .not-found-content-container {
+    flex-direction: column-reverse;
+    height: 100%;
+  }
+
+  .not-found-image {
+    padding-top: 10rem;
+    height: 100%;
+  }
 }

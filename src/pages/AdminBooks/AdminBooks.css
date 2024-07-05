@@ -1,14 +1,22 @@
 .section-admin-books {
-   grid-template-columns: 1fr 1fr;
-   scrollbar-width: none;
-   justify-items: center;
-   overflow-y: scroll;
-   display: grid;
-   height: 90vh;
-   width: 100vw;
- }
- 
- .admin-books-search{
-   height: 10vh;
-   border: 1px solid black;
- }
+  grid-template-columns: 1fr 1fr;
+  scrollbar-width: none;
+  justify-items: center;
+  overflow-y: scroll;
+  display: grid;
+  height: 90vh;
+  width: 100vw;
+}
+
+.admin-books-search {
+  height: 10vh;
+  border: 1px solid black;
+}
+
+/* Phone Responsiveness*/
+@media screen and (max-width: 430px) {
+  .section-admin-books {
+    grid-template-columns: 1fr;
+    height: 100%;
+  }
+}

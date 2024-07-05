@@ -39,11 +39,22 @@
   outline: none;
 }
 
-@media screen and (min-width: 420px) and (max-width: 800px) {
+/* Tablet Responsiveness*/
+@media screen and (min-width: 430px) and (max-width: 800px) {
   .add-input {
     width: 20rem;
   }
   .add-input-textarea {
     width: 20rem;
+  }
+}
+
+/* Phone Responsiveness*/
+@media screen and (max-width: 430px) {
+  .add-input {
+    width: 70vw;
+  }
+  .add-input-textarea {
+    width: 70vw;
   }
 }

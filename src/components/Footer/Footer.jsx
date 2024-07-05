@@ -34,9 +34,8 @@ export const Footer = () => {
               <FaTiktok />
             </a>
           </div>
-          <div className="footer-empty"></div>
           <div className="footer-rights">
-            <p className="footer-rights-text">
+            <p className="footer-rights-text italic-font">
               &quot;In the reels of time, we delve so deep, <br />
               Where stories old and legends sleep.
               <br />

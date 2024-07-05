@@ -112,3 +112,17 @@ input:focus {
   font-size: 8rem;
 }
 
+/* Phone Responsiveness*/
+@media screen and (max-width: 420px) {
+  .admin-record-card {
+    height: 100%;
+    width: 100%;
+    padding: 2rem;
+  }
+
+  .tab-panel-add-record {
+    margin: 2rem 0;
+    height: 30vh;
+    width: 90vw;
+  }
+}

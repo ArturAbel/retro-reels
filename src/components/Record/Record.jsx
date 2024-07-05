@@ -19,13 +19,13 @@ export const Record = ({ record, setVideo, setYoutubeDisplay }) => {
           alt="record"
         />
       </div>
-      <div className="record-card-content">
-        <div>
-          <p className="record-card-year">{year}</p>
-          <p className="record-card-singer">{singer}</p>
+      <div className="record-card-content-container">
+        <div className="record-card-content-div">
+          <span className="record-card-year">({year})</span>
+          <span className="record-card-singer">{singer}</span>
         </div>
-        <div>
-          <p className="record-card-song">{song}</p>
+        <div className="record-card-content-div">
+          <span className="record-card-song">{song}</span>
         </div>
       </div>
     </div>

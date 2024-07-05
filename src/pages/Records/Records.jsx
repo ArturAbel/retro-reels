@@ -30,11 +30,6 @@ export const Records = () => {
       ) : (
         <>
           <div className="records-grid">
-            <img
-              className="records-guitar-image"
-              src={guitarImage}
-              alt="guitar"
-            />
             {records.map((record) => {
               return (
                 <Record
@@ -45,11 +40,6 @@ export const Records = () => {
                 />
               );
             })}
-            <img
-              className="records-drumsticks-image"
-              src={sticksImage}
-              alt="drumsticks"
-            />
           </div>
           {youtubeDisplay && (
             <div className="youtube-video-container">

@@ -34,3 +34,21 @@
 .navbar-link.active {
   background-color: var(--background-main-3);
 }
+
+/* Phone Responsiveness*/
+@media screen and (max-width: 420px) {
+  .navbar-admin {
+    flex-direction: column;
+    height: 15vh;
+  }
+
+  .navbar-admin-logout-button-container {
+    height: 5vh;
+    width: 100%;
+  }
+
+  .navbar-admin-buttons-container {
+    width: 100%;
+    height: 10vh;
+  }
+}

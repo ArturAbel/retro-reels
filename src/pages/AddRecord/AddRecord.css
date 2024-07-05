@@ -31,3 +31,19 @@
   height: 3.5rem;
   width: 8rem;
 }
+
+/* Phone Responsiveness*/
+@media screen and (max-width: 430px) {
+  .add-record-form {
+    height: 60vh;
+    gap: 3rem;
+  }
+  .add-record-title {
+    align-content: center;
+    height: 10vh;
+  }
+
+  .add-record-form-div {
+    flex-direction: column;
+  }
+}

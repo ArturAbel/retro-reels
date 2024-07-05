@@ -67,8 +67,19 @@
   font-size: 1.5rem;
 }
 
-@media screen and (min-width: 420px) and (max-width: 800px) {
+/* Tablet Responsiveness*/
+@media screen and (min-width: 430px) and (max-width: 800px) {
   .login-input {
     width: 26vw;
+  }
+}
+
+/* Phone Responsiveness*/
+@media screen and (max-width: 430px) {
+  .login-back-button-link {
+    margin-left: 3rem;
+  }
+  .login-input {
+    width: 50vw;
   }
 }
