@@ -39,7 +39,7 @@
   }
   .hero-image {
     height: 60vh;
-    width: 40vw;
+    width: 50vw;
   }
 }
 
@@ -52,6 +52,6 @@
   
   .hero-image {
     height: 50vh;
-    width:80vw;
+    width:65vw;
   }
 }

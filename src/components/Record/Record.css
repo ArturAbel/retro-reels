@@ -5,6 +5,7 @@
 
 .record-card-image-container {
   position: relative;
+  overflow: hidden;
   width: 25em;
 }
 
@@ -13,15 +14,13 @@
 }
 
 .record-spinning-image {
-  transform: translate(-50%, -50%);
   position: absolute;
   border-radius: 50%;
   object-fit: cover;
   cursor: pointer;
   height: 25rem;
   width: 25rem;
-  left: 50%;
-  top: 50%;
+  top: 0;
 }
 
 .record-card-image-container:hover .record-spinning-image {
@@ -39,11 +38,10 @@
 
 .record-card-content-div {
   justify-content: space-between;
-  margin-top: .5rem;
+  margin-top: 0.5rem;
   display: flex;
   width: 100%;
   z-index: 1;
-
 }
 
 .record-card-year {
@@ -82,6 +80,14 @@
 
 @keyframes spin {
   100% {
-    transform: translate(-50%, -50%) rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+/* Phone Responsiveness*/
+@media screen and (max-width: 430px) {
+  .youtube-video-container {
+    height: 50%;
+    width: 100vw;
   }
 }
