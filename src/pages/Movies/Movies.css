@@ -103,6 +103,20 @@
   }
 }
 
+/* Desktop Responsiveness */
+@media screen and (max-width: 1920px) and (min-width: 1300px),
+  (max-height: 1200px) and (min-height: 700px) {
+  .movies-grid {
+    margin-left: 2rem;
+  }
+
+  .movie-info-container {
+    padding-right: 20vw;
+    padding-top: 15rem;
+    width: 45vw;
+  }
+}
+
 /* Tablet Responsiveness*/
 @media screen and (min-width: 430px) and (max-width: 800px) {
   .movies-grid {

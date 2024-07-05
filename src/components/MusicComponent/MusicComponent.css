@@ -71,6 +71,27 @@
   top: 0;
 }
 
+/* Desktop Responsiveness */
+@media screen and (max-width: 1920px) and (min-width: 1300px),
+  (max-height: 1200px) and (min-height: 700px) {
+  .music-component-record-image {
+    position: absolute;
+    height: 70rem;
+    width: 70rem;
+    left: 0;
+    top: 5vh;
+  }
+
+  .music-component-cover-image {
+    height: 80rem;
+    width: 60rem;
+  }
+
+  .music-component-title {
+    font-size: 5rem;
+  }
+}
+
 /* Tablet Responsiveness */
 @media screen and (min-width: 430px) and (max-width: 800px) {
   .music-component-container {

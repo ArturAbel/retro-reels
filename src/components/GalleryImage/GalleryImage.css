@@ -5,8 +5,17 @@
   padding: 0.2rem 0;
 }
 
+/* Desktop Responsiveness */
+@media screen and (max-width: 1920px) and (min-width: 1300px),
+  (max-height: 1200px) and (min-height: 700px) {
+  .hero-gallery-img {
+    height: 30rem;
+    width: 60rem;
+  }
+}
+
 /* Tablet Responsiveness */
-@media screen and (min-width: 420px) and (max-width: 800px) {
+@media screen and (min-width: 430px) and (max-width: 800px) {
   .hero-gallery-img {
     height: 15rem;
     width: 25rem;
@@ -14,17 +23,9 @@
 }
 
 /* Phone Responsiveness*/
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 430px) {
   .hero-gallery-img {
     height: 15rem;
     width: 25rem;
   }
 }
-
-
-
-
-
-
-
-

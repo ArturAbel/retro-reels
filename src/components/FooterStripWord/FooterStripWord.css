@@ -12,8 +12,19 @@
   font-size: 4rem;
 }
 
+/* Desktop Responsiveness */
+@media screen and (max-width: 1920px) and (min-width: 1300px),
+  (max-height: 1200px) and (min-height: 700px) {
+  .foot-strip-word {
+    font-size: 8rem;
+  }
+  .foot-strip-container-icon {
+    font-size: 8rem;
+  }
+}
+
 /* Tablet Responsiveness */
-@media screen and (min-width: 420px) and (max-width: 800px) {
+@media screen and (min-width: 430px) and (max-width: 800px) {
   .foot-strip-word {
     font-size: 4rem;
   }
@@ -23,7 +34,7 @@
 }
 
 /* Phone Responsiveness*/
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 430px) {
   .foot-strip-word {
     font-size: 3rem;
   }
