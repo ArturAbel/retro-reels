@@ -17,7 +17,12 @@ export const Hero = ({ homeGalleryRef }) => {
           {heroSpinners.map((image, index) => (
             <SpinnerItem key={index} image={image} index={index} />
           ))}
-          <img className="hero-image" src={heroImage} alt="hero image" />
+          <img
+            className="hero-image"
+            alt="hero image"
+            src={heroImage}
+            loading="eager"
+          />
         </div>
       </section>
       <HeroGallery homeGalleryRef={homeGalleryRef} />

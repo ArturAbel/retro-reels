@@ -231,8 +231,12 @@
   }
 
   .tv-books-image3 {
-    height: 8.5vh;
+    height: 10.5vh;
     width: 50vw;
+  }
+
+  .tv-component-title-container {
+    align-items: flex-end;
   }
 
   .tv-component-title {
@@ -245,9 +249,9 @@
 
   .arrow-movies {
     transform: rotate(270deg);
-    width: 10rem;
-    left: 30vw;
-    top: -5rem;
+    width: 8rem;
+    left: 35vw;
+    top: -3rem;
   }
 
   .arrow-books {

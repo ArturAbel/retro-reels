@@ -146,11 +146,12 @@
 
   .movie-title {
     margin-right: 2rem;
-    font-size: 1.8rem;
+    font-size: 1.7rem;
   }
 
   .movie-summary {
-    margin-right: 2rem;
-    margin-top: 2rem;
+    margin-right: 1rem;
+    font-size: 1.2rem;
+    margin-top: 1rem;
   }
 }
