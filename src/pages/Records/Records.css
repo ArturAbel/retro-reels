@@ -4,14 +4,14 @@
   flex-direction: column;
   align-items: center;
   position: relative;
-  display: flex;
   min-height: 100%;
+  display: flex;
   width: 100vw;
 }
 
 .records-section-title {
   text-shadow: 3px 2px 0 var(--color-content1);
-  color: var(--background-secondary-4);
+  color: var(--background-secondary-8);
   font-family: var(--font-music2);
   text-transform: uppercase;
   position: fixed;
@@ -21,48 +21,31 @@
   top: 0;
 }
 
-.records-guitar-image {
-  position: fixed;
-  height: 100vh;
-  width: auto;
-  z-index: 0;
-  left: 0;
-  top: 0;
-}
-
-.records-drumsticks-image {
-  position: fixed;
-  height: 70vh;
-  width: auto;
-  z-index: 0;
-  right: 0;
-  top: 0;
-}
-
 .records-button-background {
-  background-color: var(--background-secondary-4);
+  background-color: var(--background-secondary-8);
 }
 
 .records-title-color {
-  color: var(--background-secondary-4);
+  color: var(--background-secondary-8);
 }
 
 .records-grid {
   grid-template-columns: 1fr 1fr 1fr;
-  justify-content: center;
-  margin-top: 12vh;
+  justify-items: center;
+  align-items: center;
+  margin-top: 6vh;
+  min-height: 100%;
   flex-wrap: wrap;
   display: grid;
-  height: 100%;
-  width: 60vw;
+  width: 90vw;
 }
 
-.records-grid-card:nth-child(3n + 1),
-.records-grid-card:nth-child(3n) {
+.records-grid-card:nth-child(3n + 2) {
   margin-top: 10rem;
 }
 
-@media screen and (min-width: 420px) and (max-width: 800px) {
+/* Tablet Responsiveness*/
+@media screen and (min-width: 430px) and (max-width: 800px) {
   .records-section-title {
     padding-top: 0.8rem;
     font-size: 4.8rem;
@@ -74,13 +57,24 @@
     width: 90vw;
   }
 
-  .records-grid-card:nth-child(3n + 1),
-  .records-grid-card:nth-child(3n) {
+  .records-grid-card:nth-child(3n + 2) {
     margin-top: 0;
   }
+}
 
-  .records-drumsticks-image,
-  .records-guitar-image {
+/* Phone Responsiveness*/
+@media screen and (max-width: 430px) {
+  .records-section-title {
     display: none;
+  }
+
+  .records-grid {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    width: 100vw;
+  }
+
+  .records-grid-card:nth-child(3n + 2) {
+    margin-top: 0;
   }
 }

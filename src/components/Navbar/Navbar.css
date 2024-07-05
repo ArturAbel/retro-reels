@@ -1,4 +1,4 @@
-.hero-menu {
+.nav-menu {
   justify-content: space-between;
   align-items: center;
   position: relative;
@@ -7,7 +7,7 @@
   width: 100vw;
 }
 
-.hero-title {
+.nav-title {
   text-shadow: 3px 2px 0 var(--color-content1);
   font-family: var(--font-retro1);
   text-transform: uppercase;
@@ -16,28 +16,25 @@
   display: flex;
 }
 
-.hero-menu-button {
+.nav-menu-button {
   text-align: center;
   font-size: 1.5rem;
   margin-left: 2rem;
   width: 10rem;
-}
-
-.hero-menu-button {
   color: inherit;
   z-index: 1;
 }
 
 /* Tablet Responsiveness */
 @media screen and (min-width: 420px) and (max-width: 800px) {
-  .hero-title {
+  .nav-title {
     margin-right: 3rem;
     font-size: 2rem;
   }
 }
 /* Phone Responsiveness*/
 @media screen and (max-width: 420px) {
-  .hero-title {
+  .nav-title {
     font-size: 3rem;
   }
 }

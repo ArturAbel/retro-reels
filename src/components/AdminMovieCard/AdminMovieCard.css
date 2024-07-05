@@ -111,3 +111,17 @@ input:focus {
   color: var(--color-content3);
   font-size: 8rem;
 }
+
+/* Phone Responsiveness*/
+@media screen and (max-width: 420px) {
+  .admin-movie-card {
+    height: 100%;
+    width: 100%;
+    padding: 1rem;
+  }
+  .tab-panel-add-movie {
+    margin: 2rem 0;
+    height: 30vh;
+    width: 90vw;
+  }
+}

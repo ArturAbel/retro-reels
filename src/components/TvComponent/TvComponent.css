@@ -117,7 +117,7 @@
 }
 
 /* Tablet Responsiveness */
-@media screen and (min-width: 420px) and (max-width: 800px) {
+@media screen and (min-width: 430px) and (max-width: 800px) {
   .tv-image-container {
     width: 60vw;
   }
@@ -173,7 +173,7 @@
 }
 
 /* Phone Responsiveness*/
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 430px) {
   .section-tv {
     flex-direction: column-reverse;
     height: 100%;

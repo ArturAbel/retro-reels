@@ -1,10 +1,17 @@
 .section-admin-movies {
-   grid-template-columns: 1fr 1fr;
-   scrollbar-width: none;
-   justify-items: center;
-   overflow-y: scroll;
-   display: grid;
-   height: 90vh;
-   width: 100vw;
- }
- 
+  grid-template-columns: 1fr 1fr;
+  scrollbar-width: none;
+  justify-items: center;
+  overflow-y: scroll;
+  display: grid;
+  height: 90vh;
+  width: 100vw;
+}
+
+/* Phone Responsiveness*/
+@media screen and (max-width: 430px) {
+  .section-admin-movies {
+    grid-template-columns: 1fr;
+    height: 100%;
+  }
+}

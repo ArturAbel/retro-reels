@@ -37,3 +37,23 @@
   gap: 1rem;
   margin-top: 1rem;
 }
+
+/* Phone Responsiveness*/
+@media screen and (max-width: 430px) {
+  .section-add-book {
+    height: 100%;
+  }
+
+  .add-book-form {
+    height: 70vh;
+    gap: 3rem;
+  }
+  .add-book-title {
+    align-content: center;
+    height: 10vh;
+  }
+
+  .add-book-form-div {
+    flex-direction: column;
+  }
+}

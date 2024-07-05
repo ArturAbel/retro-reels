@@ -1,12 +1,19 @@
 .movie-poster {
-   cursor: pointer;
-   height: 30rem;
-   width: 20rem;
-   z-index: 1;
- }
- 
- .movie-poster-image {
-   height: 100%;
-   width: 100%;
- }
- 
+  cursor: pointer;
+  height: 30rem;
+  width: 20rem;
+  z-index: 1;
+}
+
+.movie-poster-image {
+  height: 100%;
+  width: 100%;
+}
+
+/* Phone Responsiveness*/
+@media screen and (max-width: 420px) {
+  .movie-poster {
+    height: 20rem;
+    width: 14rem;
+  }
+}

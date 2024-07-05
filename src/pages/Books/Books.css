@@ -39,3 +39,13 @@
   color: inherit;
 }
 
+/* Phone Responsiveness*/
+@media screen and (max-width: 430px) {
+  .books-section-title {
+    display: none;
+  }
+
+  .books-container {
+    margin-top: 10rem;
+  }
+}

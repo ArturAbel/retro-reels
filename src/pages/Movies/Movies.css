@@ -103,7 +103,8 @@
   }
 }
 
-@media screen and (min-width: 420px) and (max-width: 800px) {
+/* Tablet Responsiveness*/
+@media screen and (min-width: 430px) and (max-width: 800px) {
   .movies-grid {
     grid-template-columns: 1fr;
     padding: 1rem;
@@ -119,5 +120,37 @@
     padding-right: 2rem;
     padding-top: 20rem;
     width: 65vw;
+  }
+}
+
+/* Phone Responsiveness*/
+@media screen and (max-width: 430px) {
+  .movies-grid {
+    grid-template-columns: 1fr;
+    margin-top: 4rem;
+    padding: 1rem;
+    width: 25vw;
+  }
+
+  .movie-poster:nth-child(2n) {
+    margin-top: 0;
+  }
+
+  .movies-section-title {
+    display: none;
+  }
+
+  .movie-info-container {
+    width: 60vw;
+  }
+
+  .movie-title {
+    margin-right: 2rem;
+    font-size: 1.8rem;
+  }
+
+  .movie-summary {
+    margin-right: 2rem;
+    margin-top: 2rem;
   }
 }

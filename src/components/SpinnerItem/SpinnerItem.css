@@ -45,7 +45,7 @@
 }
 
 /* Tablet Responsiveness */
-@media screen and (min-width: 420px) and (max-width: 800px) {
+@media screen and (min-width: 430px) and (max-width: 800px) {
   .hero-spinner {
     height: 15rem;
     width: 15rem;
@@ -73,7 +73,7 @@
 }
 
 /* Phone Responsiveness*/
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 430px) {
   .hero-spinner {
     height: 15rem;
     width: 15rem;

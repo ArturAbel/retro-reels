@@ -31,3 +31,21 @@
   height: 3.5rem;
   width: 8rem;
 }
+
+
+/* Phone Responsiveness*/
+@media screen and (max-width: 430px) {
+
+  .add-movie-form {
+    height:60vh;
+    gap: 3rem;
+  }
+  .add-movie-title {
+    align-content: center;
+    height: 10vh;
+  }
+
+  .add-movie-form-div {
+    flex-direction: column;
+  }
+}

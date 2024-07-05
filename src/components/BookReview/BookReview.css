@@ -99,7 +99,8 @@
   gap: 2rem;
 }
 
-@media screen and (min-width:420px) and (max-width: 800px) {
+/* Tablet Responsiveness*/
+@media screen and (min-width: 420px) and (max-width: 800px) {
   .book-content-upper-container {
     margin-left: 0;
     margin-top: 15vh;
@@ -112,5 +113,42 @@
 
   .book-content-lower-container {
     margin: 0 2rem 0 1rem;
+  }
+}
+
+/* Phone Responsiveness*/
+@media screen and (max-width: 420px) {
+  .section-book-review {
+    height: 100%;
+  }
+
+  .book-review-container {
+    flex-direction: column;
+    display: flex;
+    height: 100%;
+  }
+  .book-images-container {
+    margin-top: 5vh;
+    width: 100vw;
+    height: 100%;
+  }
+
+  .book-back-cover-image,
+  .book-front-cover-image {
+    width: 60vw;
+  }
+
+  .book-content-container {
+    width: 100vw;
+    height: 100%;
+  }
+  .book-content-upper-container {
+    margin-left: 2rem;
+    margin-top: 5vh;
+  }
+
+  .book-content-lower-container {
+    padding-bottom: 2rem;
+    margin: 0 2rem;
   }
 }
