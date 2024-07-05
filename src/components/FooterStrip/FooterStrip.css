@@ -10,8 +10,8 @@
 }
 
 /* Desktop Responsiveness */
-@media screen and (width: 1920px) and (height: 1200px),
-  (min-width: 1280px) and (min-height: 631px) {
+@media screen and (max-width: 1920px) and (min-width: 1300px),
+  (max-height: 1200px) and (min-height: 700px) {
   .footer-strip {
     height: 30vh;
   }

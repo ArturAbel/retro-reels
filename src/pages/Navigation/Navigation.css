@@ -105,8 +105,8 @@
 }
 
 /* Desktop Responsiveness */
-@media screen and (width: 1920px) and (height: 1200px),
-  (min-width: 1280px) and (min-height: 631px) {
+@media screen and (max-width: 1920px) and (max-height: 1200px),
+  (min-width: 1300x) and (min-height: 700px) {
   .navigation-top {
     padding: 0rem 5rem;
     width: 100%;

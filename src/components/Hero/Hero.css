@@ -32,14 +32,13 @@
 }
 
 /* Desktop Responsiveness */
-@media screen and (width: 1920px) and (height: 1200px), 
-       (min-width: 1280px) and (min-height: 631px) {
-        .hero-image {
-          height: 70vh;
-          width: 30vw;
-        }
-}
-
+@media screen and (max-width: 1920px) and (min-width: 1300px),
+  (max-height: 1200px) and (min-height: 700px) {
+  .hero-image {
+    height: 70vh;
+    width: 30vw;
+  }
+} 
 
 /* Tablet Responsiveness */
 @media screen and (min-width: 430px) and (max-width: 800px) {
@@ -55,13 +54,12 @@
 
 /* Phone Responsiveness*/
 @media screen and (max-width: 430px) {
-
   .section-hero {
-    min-height:50vh;
+    min-height: 50vh;
   }
-  
+
   .hero-image {
     height: 50vh;
-    width:65vw;
+    width: 65vw;
   }
 }
