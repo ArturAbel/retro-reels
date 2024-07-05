@@ -28,7 +28,7 @@
 /* Desktop Responsiveness */
 @media screen and (max-width: 1920px) and (min-width: 1300px),
   (max-height: 1200px) and (min-height: 700px) {
-  .nav-menu-button {  
+  .nav-menu-button {
     margin-left: 4rem;
   }
 }
@@ -43,6 +43,10 @@
 /* Phone Responsiveness*/
 @media screen and (max-width: 430px) {
   .nav-title {
+    margin-right: 1rem;
     font-size: 3rem;
+  }
+  .nav-menu-button {
+    margin-left: 1rem;
   }
 }
