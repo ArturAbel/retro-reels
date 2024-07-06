@@ -4,6 +4,14 @@
   width: 100vw;
 }
 
+/* Desktop Responsiveness */
+@media screen and (max-width: 1920px) and (min-width: 1366px),
+  (max-height: 1200px) and (min-height: 768px) {
+  .section-home {
+    overflow: hidden;
+  }
+}
+
 /* Tablet Responsiveness */
 @media screen and (min-width: 420px) and (max-width: 800px) {
   .section-home {

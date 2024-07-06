@@ -13,8 +13,8 @@
 }
 
 /* Desktop Responsiveness */
-@media screen and (max-width: 1920px) and (min-width: 1300px),
-  (max-height: 1200px) and (min-height: 700px) {
+@media screen and (max-width: 1920px) and (min-width: 1366px),
+  (max-height: 1200px) and (min-height: 768px) {
   .foot-strip-word {
     font-size: 8rem;
   }
