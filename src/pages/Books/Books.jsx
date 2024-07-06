@@ -10,20 +10,21 @@ import "./Books.css";
 
 export const Books = () => {
   const { books, loading } = useDataContext();
+
   gsap.registerPlugin(useGSAP);
 
   useGSAP(() => {
     const books = document.querySelectorAll(".book-container");
 
-    books.forEach((books) => {
-      const imageWrapper = books.querySelector(".book-image-container");
+    books.forEach((book) => {
+      const imageWrapper = book.querySelector(".book-image-container");
 
       const onMouseEnter = () => {
         gsap.set(imageWrapper, {
           ease: "none",
           opacity: 1,
         });
-        gsap.set(books, {
+        gsap.set(book, {
           background: "white",
         });
       };
@@ -34,14 +35,18 @@ export const Books = () => {
           duration: 0.3,
           opacity: 0,
         });
-        gsap.set(books, {
+        gsap.set(book, {
           background: "none",
         });
       };
-      books.addEventListener("mouseenter", onMouseEnter);
-      books.addEventListener("mouseleave", onMouseLeave);
+      book.addEventListener("mouseenter", onMouseEnter);
+      book.addEventListener("mouseleave", onMouseLeave);
     });
   });
+
+  const sortBooksByName = [...books].sort((a, b) =>
+    a.title.localeCompare(b.title)
+  );
 
   return (
     <section className="section-books">
@@ -54,7 +59,7 @@ export const Books = () => {
         <Loading />
       ) : (
         <div className="books-container">
-          {books.map((book) => {
+          {sortBooksByName.map((book) => {
             return (
               <Link
                 className="books-link"

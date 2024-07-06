@@ -11,7 +11,7 @@
 }
 
 /* Phone Responsiveness*/
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 430px) {
   .movie-poster {
     height: 20rem;
     width: 14rem;

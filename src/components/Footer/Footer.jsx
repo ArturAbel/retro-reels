@@ -1,13 +1,17 @@
 import { FaTwitter, FaInstagram, FaFacebookF, FaTiktok } from "react-icons/fa";
+import { footerSpinner } from "../../utilities/variables";
+import { SpinnerItem } from "../SpinnerItem/SpinnerItem";
+import { FooterStrip } from "../FooterStrip/FooterStrip";
 
 import "./Footer.css";
-import { FooterStrip } from "../FooterStrip/FooterStrip";
 
 export const Footer = () => {
   return (
     <>
       <FooterStrip />
       <section className="section-footer">
+        <SpinnerItem image={footerSpinner} index={5} />
+
         <div className="footer-subscribe-container">
           <h4 className="footer-subscribe-title">get involved</h4>
           <div className="footer-input-container">

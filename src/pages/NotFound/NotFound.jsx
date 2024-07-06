@@ -1,4 +1,6 @@
+import { notFoundImage } from "../../utilities/variables";
 import { useNavigate } from "react-router-dom";
+
 import "./NotFound.css";
 
 export const NotFound = () => {
@@ -16,8 +18,8 @@ export const NotFound = () => {
       <div className="not-found-content-container">
         <img
           className="not-found-image"
-          src="../../assets/img/not-found/1.png"
-          alt="image"
+          src={notFoundImage}
+          alt="not found"
         />
         <h4 className="not-found-title">
           Sorry man, this page is like totally missing, Let&apos;s take it easy

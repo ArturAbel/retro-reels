@@ -19,7 +19,6 @@ export const Home = () => {
 
   useGSAP(() => {
     const vh = (coef) => window.innerHeight * (coef / 100);
-    const vw = (coef) => window.innerWidth * (coef / 100);
 
     gsap.to(".col-1", {
       x: -300,

@@ -1,5 +1,6 @@
 import { useDataContext } from "../../context/DataContext";
 import { useNavigate, useParams } from "react-router-dom";
+import { Loading } from "../Loading/Loading";
 import { useEffect, useState } from "react";
 
 import "./BookReview.css";
@@ -24,7 +25,7 @@ export const BookReview = () => {
   };
 
   return loading || !book ? (
-    <p>Loading...</p>
+    <Loading />
   ) : (
     <section className="section-book-review">
       <div className="book-review-button-container">

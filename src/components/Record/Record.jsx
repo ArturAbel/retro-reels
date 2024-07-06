@@ -12,14 +12,12 @@ export const Record = ({ record, setVideo, setYoutubeDisplay }) => {
     <div className="records-grid-card">
       <div className="record-card-image-container">
         <img className="record-still-image" src={image} alt="record" />
-        <div className="record-spinning-image-container">
-          <img
-            className="record-spinning-image"
-            onClick={handleImageClick}
-            alt="record"
-            src={image}
-          />
-        </div>
+        <img
+          className="record-spinning-image"
+          onClick={handleImageClick}
+          alt="record"
+          src={image}
+        />
       </div>
       <div className="record-card-content-container">
         <div className="record-card-content-div">

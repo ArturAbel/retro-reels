@@ -100,7 +100,7 @@
 }
 
 /* Tablet Responsiveness*/
-@media screen and (min-width: 420px) and (max-width: 800px) {
+@media screen and (min-width: 430px) and (max-width: 800px) {
   .book-content-upper-container {
     margin-left: 0;
     margin-top: 15vh;
@@ -117,7 +117,7 @@
 }
 
 /* Phone Responsiveness*/
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 430px) {
   .section-book-review {
     height: 100%;
   }

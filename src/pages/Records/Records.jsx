@@ -1,4 +1,3 @@
-import { guitarImage, sticksImage } from "../../utilities/variables";
 import { useDataContext } from "../../context/DataContext";
 import { Loading } from "../../components/Loading/Loading";
 import { Navbar } from "../../components/Navbar/Navbar";
