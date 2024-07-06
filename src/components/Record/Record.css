@@ -20,11 +20,13 @@
   cursor: pointer;
   height: 25rem;
   width: 25rem;
+  left: 0;
   top: 0;
 }
 
 .record-card-image-container:hover .record-spinning-image {
   animation: spin 6s infinite linear;
+  animation-delay: 0.5s;
 }
 
 .record-card-content-container {
