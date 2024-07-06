@@ -117,8 +117,8 @@
 }
 
 /* Desktop Responsiveness */
-@media screen and (max-width: 1920px) and (min-width: 1300px),
-  (max-height: 1200px) and (min-height: 700px) {
+@media screen and (max-width: 1920px) and (min-width: 1366px),
+  (max-height: 1200px) and (min-height: 768px) {
   .tv-screen {
     z-index: 0;
     left: 5rem;
@@ -131,6 +131,13 @@
 
   .tv-component-title {
     font-size: 5rem;
+  }
+}
+
+/* Laptop 15" Responsiveness */
+@media screen and (width: 1366px) and (height: 768px) {
+  .tv-screen {
+    top: 4rem;
   }
 }
 
