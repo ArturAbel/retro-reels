@@ -56,9 +56,10 @@ export const footerWords = [
   "retro reels",
 ];
 
+export const footerSpinner = "../../assets/img/footer/spinner5.png";
+
 // Loader Component
 export const loadingImage = "../../assets/img/loading/loading.png";
 
-// Records Page
-export const guitarImage = "../../assets/img/records/guitar.png";
-export const sticksImage = "../../assets/img/records/drum.png";
+// Not Found Component
+export const notFoundImage = "../../assets/img/not-found/1.png";

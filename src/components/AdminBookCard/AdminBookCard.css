@@ -114,7 +114,7 @@ input:focus {
 }
 
 /* Phone Responsiveness*/
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 430px) {
   .admin-book-card {
     height: 100%;
     width: 100%;

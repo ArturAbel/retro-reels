@@ -1,4 +1,4 @@
-.hero-spinner {
+.spinner {
   filter: drop-shadow(var(--drops-shadow));
   position: absolute;
   transition: 0.5s;
@@ -8,7 +8,7 @@
   z-index: 2;
 }
 
-.hero-spinner:hover {
+.spinner:hover {
   transform: scale(1.1);
 }
 
@@ -44,9 +44,14 @@
   top: 1vh;
 }
 
+.spinner-5 {
+  left: 10vw;
+  bottom: 42vh;
+}
+
 /* Tablet Responsiveness */
 @media screen and (min-width: 430px) and (max-width: 800px) {
-  .hero-spinner {
+  .spinner {
     height: 15rem;
     width: 15rem;
   }
@@ -74,7 +79,7 @@
 
 /* Phone Responsiveness*/
 @media screen and (max-width: 430px) {
-  .hero-spinner {
+  .spinner {
     height: 15rem;
     width: 15rem;
   }

@@ -1,10 +1,11 @@
 import "./SpinnerItem.css";
+
 export const SpinnerItem = ({image, index}) => {
   return (
     <img
-      className={`hero-spinner spinner-${index}`}
+      className={`spinner spinner-${index}`}
       src={image}
-      alt='spinner'
+      alt='pin'
     />
   );
 };

@@ -65,7 +65,7 @@
 }
 
 /* Tablet Responsiveness*/
-@media screen and (min-width: 420px) and (max-width: 800px) {
+@media screen and (min-width: 430px) and (max-width: 800px) {
   .book-container {
     padding-left: 1rem;
   }
@@ -76,7 +76,7 @@
 }
 
 /* Phone Responsiveness*/
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 430px) {
   .book-container {
     padding-left: 2rem;
     height: 100%;
