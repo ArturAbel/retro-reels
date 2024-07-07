@@ -39,10 +39,11 @@
 
 .movies-grid {
   grid-template-columns: 1fr 1fr 1fr 1fr;
+  min-height: 100vh;
   margin-top: 10rem;
+  column-gap: 2rem;
   display: grid;
   row-gap: 2rem;
-  column-gap: 2rem;
   height: 100%;
   width: 50vw;
 }
@@ -54,7 +55,7 @@
 .movie-info-container {
   flex-direction: column;
   padding-left: 2rem;
-  padding-top: 5rem;
+  padding-top: 1rem;
   position: fixed;
   display: flex;
   height: 100%;
@@ -141,7 +142,7 @@
 @media screen and (max-width: 430px) {
   .movies-grid {
     grid-template-columns: 1fr;
-    margin-top: 4rem;
+    margin-top: 0;
     margin-left: 0;
     padding: 1rem;
     width: 40vw;
@@ -149,7 +150,7 @@
 
   .movie-info-container {
     padding-right: 0;
-    padding-top: 6vh;
+    padding-top: 0;
   }
 
   .movie-poster:nth-child(2n) {
@@ -171,7 +172,7 @@
 
   .movie-summary {
     margin-right: 1rem;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     margin-top: 1rem;
   }
 }

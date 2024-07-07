@@ -1,4 +1,5 @@
 import { MoviePoster } from "../../components/MoviePoster/MoviePoster";
+import { SearchYear } from "../../components/SearchYear/SearchYear";
 import { useDataContext } from "../../context/DataContext";
 import { Loading } from "../../components/Loading/Loading";
 import { Navbar } from "../../components/Navbar/Navbar";
@@ -9,6 +10,7 @@ import "./Movies.css";
 export const Movies = () => {
   const [movieDetails, setMovieDetails] = useState(null);
   const { movies, loading } = useDataContext();
+  const [filterData, setFilterData] = useState(movies);
 
   const { name, year, genre, director, summary } = movieDetails || {};
 
@@ -19,13 +21,14 @@ export const Movies = () => {
         color={"movies-title-color"}
       />
       <h1 className="movies-section-title">movies</h1>
+      <SearchYear setFilterData={setFilterData} data={movies} />
       {loading ? (
         <Loading />
       ) : (
         <section className="movies-section-divider">
           <div className="movies-posters-container">
             <div className="movies-grid">
-              {movies.map((movie) => {
+              {filterData.map((movie) => {
                 return (
                   <MoviePoster
                     key={movie.id}

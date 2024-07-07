@@ -1,0 +1,11 @@
+.search-by-year {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  height: 15vh;
+}
+
+.search-by-year input[type="number"] {
+  padding-left: 0.5rem;
+  background-color: var(--background-light-1);
+}

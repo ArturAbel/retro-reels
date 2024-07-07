@@ -18,7 +18,7 @@ export const Home = () => {
   const tvSectionRef = useRef(null);
 
   useGSAP(() => {
-    const vh = (coef) => window.innerHeight * (coef / 100);
+    const vh = (percentage) => window.innerHeight * (percentage / 100);
 
     gsap.to(".col-1", {
       x: -300,
@@ -54,28 +54,29 @@ export const Home = () => {
       },
     });
 
-    gsap.from(".tv-books-image2", {
-      x: 700,
-      rotate: 30,
-      scrollTrigger: {
-        trigger: musicSectionRef.current,
-        start: "top" + "bottom",
-        end: vh(0) + " top",
-        scrub: 2,
-      },
-    });
-
     gsap.from(".tv-books-image1", {
       x: -600,
       rotate: 60,
       scrollTrigger: {
         trigger: musicSectionRef.current,
         ease: "power1.inOut",
-        start: "top center",
-        end: "+=800",
+        start: vh(0) + " top",
+        end: vh(80) + " top",
         scrub: 2,
       },
     });
+
+    gsap.from(".tv-books-image2", {
+      x: 700,
+      rotate: 30,
+      scrollTrigger: {
+        trigger: musicSectionRef.current,
+        start: vh(0) + " top",
+        end: vh(80) + " top",
+        scrub: 2,
+      },
+    });
+
     gsap.from(".footer-strip", {
       x: -440,
       duration: 7,
