@@ -1,3 +1,4 @@
+import { SearchYear } from "../../components/SearchYear/SearchYear";
 import { useDataContext } from "../../context/DataContext";
 import { Loading } from "../../components/Loading/Loading";
 import { Navbar } from "../../components/Navbar/Navbar";
@@ -11,6 +12,7 @@ export const Records = () => {
   const [youtubeDisplay, setYoutubeDisplay] = useState(false);
   const [video, setVideo] = useState("");
   const { records, loading } = useDataContext();
+  const [filterData, setFilterData] = useState(records);
 
   const handleCloseYoutubeButton = () => {
     setYoutubeDisplay(false);
@@ -24,12 +26,13 @@ export const Records = () => {
         color={"records-title-color"}
       />
       <h1 className="records-section-title">records</h1>
+      <SearchYear setFilterData={setFilterData} data={records} />
       {loading ? (
         <Loading />
       ) : (
         <>
           <div className="records-grid">
-            {records.map((record) => {
+            {filterData.map((record) => {
               return (
                 <Record
                   setYoutubeDisplay={setYoutubeDisplay}

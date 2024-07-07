@@ -4,12 +4,15 @@ import { Loading } from "../../components/Loading/Loading";
 import { Navbar } from "../../components/Navbar/Navbar";
 import { Link } from "react-router-dom";
 import { useGSAP } from "@gsap/react";
+import { useState } from "react";
 import gsap from "gsap";
 
 import "./Books.css";
+import { SearchYear } from "../../components/SearchYear/SearchYear";
 
 export const Books = () => {
   const { books, loading } = useDataContext();
+  const [filterData, setFilterData] = useState(books);
 
   gsap.registerPlugin(useGSAP);
 
@@ -44,7 +47,7 @@ export const Books = () => {
     });
   });
 
-  const sortBooksByName = [...books].sort((a, b) =>
+  const sortBooksByName = [...filterData].sort((a, b) =>
     a.title.localeCompare(b.title)
   );
 
@@ -55,6 +58,7 @@ export const Books = () => {
         color={"books-title-color"}
       />
       <h1 className="books-section-title">books</h1>
+      <SearchYear setFilterData={setFilterData} data={books} />
       {loading ? (
         <Loading />
       ) : (
