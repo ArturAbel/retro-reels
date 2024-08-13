@@ -13,7 +13,6 @@ export const Login = () => {
   const [email, setEmail] = useState("");
   const navigate = useNavigate();
 
-
   const handleLogin = async (event) => {
     event.preventDefault();
     try {
@@ -23,21 +22,17 @@ export const Login = () => {
     }
   };
 
-
   useEffect(() => {
     if (user) {
       navigate("/admin/admin-records");
     }
   }, [user, navigate]);
 
-
-
   useEffect(() => {
     if (error) {
       setTimeout(() => setError(null), 2000);
     }
   }, [error, setError]);
-
 
   return (
     <section className="section-login">
