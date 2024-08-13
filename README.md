@@ -15,8 +15,9 @@ Retro Reels is a website dedicated to classic books, movies, and music. It provi
 
 <a name="images"></a>
 ## Images
+[Watch Video](https://github.com/user-attachments/assets/fbdae5c2-009c-4f60-9b32-2e4445577070
+)
 
-https://github.com/user-attachments/assets/fbdae5c2-009c-4f60-9b32-2e4445577070
 ![Image 2](https://github.com/ArturAbel/retro-reels/blob/main/public/assets/readme/phone.png)
 
 
