@@ -17,7 +17,7 @@ Retro Reels is a website dedicated to classic books, movies, and music. It provi
 ## Images
 
 <video width="320" height="240" controls>
-  <source src="public/assets/readme/video.mp4" type="video/mp4">
+  <source src="https://github.com/ArturAbel/retro-reels/blob/main/public/assets/readme/video.mp4" type="video/mp4">
   Your browser does not support the video tag.
 </video>
 ![Image 2](https://github.com/ArturAbel/retro-reels/blob/main/public/assets/readme/phone.png)
